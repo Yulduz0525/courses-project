@@ -1,11 +1,11 @@
+/* navbar */
 .menuLink{
-  transition: color linear 0.3s;
-
+  transition: all linear 0.3s;
 }
 .menuLink:hover{
   color: rgb(113, 113, 248);
-  /* transition: all linear 3; */
 }
+/* header */
 .mainBtn{
   background: linear-gradient(114.23deg, #61B895 -62.2%, #149ED5 29.07%, #FF1CF7 111.62%);
   padding: 12px 13px;
@@ -13,14 +13,58 @@
   gap: 5px;
   transition: transform 0.3s ease;
 }
-.mainBtn:hover{
-  transform: translateX(5px) translateY(5px);
-  /* transform: translateZ(5px); */
+.videoBtn{
+  transition: transform 0.3s ease;
 }
+.mainBtn:hover,.videoBtn:hover{
+  transform: translateX(5px) translateY(5px);
+}
+
 .btnText{
   background: linear-gradient(114.23deg, #61B895 -62.2%, #149ED5 29.07%, #FF1CF7 111.62%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+p{
+  margin: 0;
+}
+.header_title{
+  font-size: 54px;
+}
+/* slider */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Slider trek */
+.slider-track {
+  display: flex;
+  animation: slide 30s linear infinite;
+}
+
+/* Slaydlar */
+.slide {
+  width: 17%;
+  padding: 18px 0;
+  flex: 0 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background: white;
+  color: white;
+}
+
+/* Animatsiya */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

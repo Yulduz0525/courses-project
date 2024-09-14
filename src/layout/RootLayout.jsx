@@ -1,56 +1,16 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
-import Logo from "../assets/logo.png"
-import Language from '../components/Language/Language'
+import { Outlet } from 'react-router-dom'
+import '../App.css'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
 const RootLayout = () => {
-    const navLink = [
-        {
-            linkName: "Kurs haqida",
-            path: "aboutCours"
-        },
-        {
-            linkName: "Biz haqimizda",
-            path: ""
-        },
-        {
-            linkName: "O’quvchilar fikri",
-            path: ""
-        },
-        {
-            linkName: "Kontakt",
-            path: ""
-        }
-    ]
+    
     return (
         <>
-            <div className='container'>
-                <nav>
-                    <div className='container'>
-                        <div className='d-flex justify-between items-center text-white w-full' >
-                            <div>
-                                <Link to={'/'}>
-                                    <img src={Logo} />
-                                </Link>
-                            </div>
-                            <div>
-                                <ul className='d-flex items-center gap-[60px]' style={{gap:"60px"}}>
-                                    {
-                                        navLink?.map((item, index) => (
-                                            <li key={index} className='hover:text-indigo-500 menuLink'>
-                                                <Link to={item.path}>{item.linkName}</Link>
-                                            </li>
-                                        ))
-                                    }
-                                </ul>
-                            </div>
-                            <div>
-                                <Language />
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+            <div>
+                <Navbar/>
                 <Outlet />
-                <footer>footer</footer>
+                <Footer/>
             </div>
         </>
     )
