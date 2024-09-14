@@ -26,14 +26,14 @@ const RootLayout = () => {
             <div className='container'>
                 <nav>
                     <div className='container'>
-                        <div className='flex justify-between items-center text-white w-full' >
+                        <div className='d-flex justify-between items-center text-white w-full' >
                             <div>
                                 <Link to={'/'}>
                                     <img src={Logo} />
                                 </Link>
                             </div>
                             <div>
-                                <ul className='flex items-center gap-[60px]' style={{gap:"60px"}}>
+                                <ul className='d-flex items-center gap-[60px]' style={{gap:"60px"}}>
                                     {
                                         navLink?.map((item, index) => (
                                             <li key={index} className='hover:text-indigo-500 menuLink'>
