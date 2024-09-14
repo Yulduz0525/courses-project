@@ -68,3 +68,28 @@ p{
     transform: translateX(-100%);
   }
 }
+
+/* footer */
+.footer{
+  background-color: #15182F;
+  border-top: 1px solid #434343;
+}
+.footer-ul-title{
+  color: #FCFCFC;
+  margin-bottom: 6px;
+}
+.footer-ul-text{
+  color: #B6B7BE;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.footer-ul-text:hover{
+  color: #c8c9cf;
+}
+.footer-p-title{
+  color: #B6B7BE;
+  margin-bottom: 6px;
+}
+.footer-phone{
+  font-size: 20px;
+}
