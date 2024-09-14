@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div className='footer py-5'>
             <div className='container'>
-                <div className='d-flex align-items-start justify-content-between text-white'>
+                <div className='d-flex align-items-start justify-content-between text-white footer_wrapper'>
                     <div>
                         <ul className='list-unstyled'>
                             <li className='fw-bold fs-5 footer-ul-title'>Kurslarimiz</li>
