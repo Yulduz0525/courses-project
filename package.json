@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.20",
     "i18next": "^23.15.1",
     "i18next-browser-languagedetector": "^8.0.0",
     "next-i18next": "^15.3.1",
+    "postcss": "^8.4.45",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-i18next": "^15.0.1",
