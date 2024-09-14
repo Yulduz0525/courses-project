@@ -6,3 +6,9 @@ body{
   background: #121421;
   /* background-image: url(./assets/cell.jpg); */
 }
+.container {
+  width: 100%;
+  max-width: 1255px !important; 
+  margin: 0 auto;
+  padding: 0 15px;
+}
