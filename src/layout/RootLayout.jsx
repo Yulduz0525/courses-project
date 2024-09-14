@@ -22,8 +22,9 @@ const RootLayout = () => {
     ]
     return (
         <>
-            <div className='container'>
-                <nav className='flex items-center text-white'>
+           
+              <div className='container'>
+              <nav className='flex items-center text-white'>
                     <div>
                         <img src={Logo} />
                     </div>
@@ -39,7 +40,8 @@ const RootLayout = () => {
                 </nav>
                 <Outlet />
                 <footer>footer</footer>
-            </div>
+              </div>
+           
         </>
     )
 }
