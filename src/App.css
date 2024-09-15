@@ -157,6 +157,40 @@ p{
   padding-top: 700px !important;
 
 }
+@media (max-width:1060px) {
+  .slider{
+  padding-top: 500px !important;
+
+  }
+}
+@media (max-width:875px){
+  .slider{
+    padding-top: 900px !important;
+  
+    }
+}
+@media (max-width:590px){
+  .slider{
+    padding-top: 930px !important;
+  
+    }
+}
+@media (max-width:570px){
+  .slider{
+    padding-top: 783px !important;
+    }
+}
+
+@media (max-width:405px){
+  .slider{
+    padding-top: 810px !important;
+    }
+}
+@media (max-width:370px){
+  .slider{
+    padding-top: 865px !important;
+    }
+}
 /* Slider trek */
 .slider-track {
   display: flex;
@@ -464,7 +498,7 @@ padding: 15px 0;
 }
 
 .slick-dots li.slick-active .custom-dot {
-  background-color:#15182F; /* Faol indikator uchun rang */
+  background-color:#5d6de8; /* Faol indikator uchun rang */
 }
 /* contact */
 

@@ -1,10 +1,100 @@
 {
-    "hello1":"Kurs haqida",
-    "hello2":"Biz haqimizda",
+    "nav":{
+        "link1":"Kurs haqida",
+        "link2":"Biz haqimizda",
+        "link3":"O’quvchilar fikri",
+        "link4":"Kontakt"
+    },
     "header":{
         "title":"NetPro IT School bilan kelajakni birga quring",
         "btn1":"Kursga yozilish",
-        "btn2":"Kurs haqida video"
+        "btn2":"Kurs haqida video",
+        "mainTitle":"Kasbiy rivojlanish uchun o’quv kurslar",
+        "aditionalText":"Bizning it-kasbiy tayyorgarlik kursimizga yozilish orqali siz martaba istiqbollarini oshirishi mumkin bo'lgan sanoat tomonidan tan olingan sertifikatlarni olish imkoniyatiga ega bo'lasiz."
+    },
+    "advantages":{
+        "title":"Afzalliklarimiz",
+        "aditionalText":"Biz hozirda o'zizmizning oldimizga qo'ygan maqsadlarimiz sari yo'l olmoqdamiz qani sizham bizga qo'shiling!",
+        "card1Title":"O’z ishining ustalari",
+        "card2Title":"Shunchaki kurs emas",
+        "card3Title":"Interaktiv darslar",
+        "card4Title":"Nazariya va amaliyot",
+        "card5Title":"Mentor kerakmi?",
+        "card6Title":"Sertifikat",
+        "card1Text":"Ustozlar o'z kasblari bo'yicha ko'p yillik tajribaga ega bo'lib, ularga qimmatli saboqlar va ilg'or tajribalarni o'z o’quvchilari bilan baham ko'rish imkonini beradi.",
+        "card2Text":"Har bir o‘quv kursi shunday ishlab chiqilganki, ularni muvaffaqiyatli yakunlab, siz zamonaviy kasb egasiga aylanishingiz va shu sohada o‘z faoliyatingizni boshlashingiz mumkin.",
+        "card3Text":"Biznig interaktiv darslar, bu erda siz o'quvchilarni jalb qilish va bilimlarni saqlash uchun interaktivlikdan foydalanadigan innovatsion o'qitish usullari dunyosiga kirib borasiz.",
+        "card4Text":"Amaliyot odamlarga nazariyalarni amaliy sharoitlarda sinab ko'rish, o'z mahoratini oshirish va amaliy tajriba orqali tajribani rivojlantirish, nazariya va real dastur o'rtasidagi farqni bartaraf etadi.",
+        "card5Text":"Darslarni o‘zlashtirish davrida sizda savollar tug‘ilishi tabiiy holat. Mentorlarga murojaat qilsangiz, ular sizni qiynayotgan masalalar bo‘yicha yechim topishga yo‘l ko‘rsatadilar.",
+        "card6Text":"Sertifikatlashni davom ettirish doimiy kasbiy rivojlanishni va ushbu uzluksiz ta'lim sertifikatlangan mutaxassislarga o'z sohalarida raqobatbardosh va dolzarb bo'lib qolishlariga yordam beradi.",
+        "title2":"O’zingizga mos yo’nalishni tanlang!",
+        "text":"Dasturlash dunyosida kashfiyot safariga chiqishga tayyormisiz? Ushbu kurs sizga dasturlash mutaxassisliklarining turli landshaftlarini kezish va qiziqishlaringiz va martaba maqsadlaringizga mos keladigan yo'nalishni topishga yordam berish uchun mo'ljallangan. Interfaol mashqlar, murabbiylik mashg'ulotlari va amaliy loyihalar orqali siz turli xil dasturlash sohalarini o'rganasiz va sizning mahoratingiz va ehtiroslaringizga eng mos keladigan yo'lni ochasiz. Ushbu qiziqarli kashfiyotda bizga qo'shiling va dasturlashda qoniqarli martaba sari birinchi qadamni qo'ying.",
+        "title3":"Yo’nalishlar bo’yicha kurslar",
+        "text2":"Zamonaviy sohalardan birini o‘rganing va talabgir kasb egasi bo‘ling!",
+        "frontend":"Frontend",
+        "dizayn":"UX / UI dizayn",
+        "3dmax":"3d max",
+        "backend":"Backend",
+        "kpSavodxonligi":"Kompyuter savodxonligi",
+        "scratch":"Scratch",
+        "batafsilBtn":"Batafsil",
+        "coursesBtn":"Kutilayotgan kurslar"
+    },
+    "aboutUs":{
+        "title":"Biz haqimizda",
+        "title2":"Biz kimmiz?",
+        "text":"NetPro it School ta'lim markazi 2020 yildan beri faoliyat yuritib kelmoqda. Bizning markazimizda siz kompyuter savodxonligini, Front-end, Back-end, Smm, Scratch va Ingliz tilini o'rganish imkoniyatiga egasiz. Bizning o'quv markazimizda ushbu yo'nalishda o'qish uchun barcha sharoitlar yaratilgan va bizning ofislarimiz kompyuter uskunalari bilan jihozlangan. Bizning o'qituvchilarimiz o'z sohalarida malakali mutaxassislardir va sizga to'g'ri ta'lim olish uchun barcha kerakli tavsiyalarni beradi. Bizning darslarimiz asosan amaliyotga yo'naltirilgan, 20% nazariy fanlar va 80% amaliy jarayon."
+    },
+    "netPro":{
+        "title":"Nima uchun NetPro?",
+        "title01":"Sifatli ta’lim",
+        "title02":"Doimiy musobaqalar",
+        "title03":"Ish taklif qilish kafolati",
+        "title04":"Sertifikat",
+        "title05":"Hamyonbop va yuqori sifat",
+        "title06":"Bepul ochiq darsga yozilish",
+        "title07":"2 oy ichida 0 dan daromadgacha",
+        "title08":"3+ yil tajribaga ega mentorlar",
+        "title09":"Portfolio va resumeni shakllantirish",
+        "text01":"Doimiy yangilanib boradigan kurslar va katta tajribaga ega ustozlar.",
+        "text02":"Dasturlash, bo‘yicha haftalik va oylik hakaton musobaqalar.",
+        "text03":"Kurslarni namunali bitirgan o‘quvchilarga ish taklif qilish kafolati.",
+        "text04":"Kursni namunali tamomlagan o‘quvchilar, diplom va sertifikatga ega bo‘ladi.",
+        "text05":"Byudjetga mos narxda yuqori sifatli ko'rsatmalar.",
+        "text06":"Bepul ochiq dars, cheksiz imkoniyatlarni kashf qilish uchun mo'ljallangan.",
+        "text07":"2 oy ichida 0 dan daromadgacha bo'lgan g'alabangizga yo'l ochadigan sayohat.",
+        "text08":"3 yil tajribaga ega mentorlar, intiluvchan shaxslar uchun yo'lni yoritadi.",
+        "text09":"Resume va portfelingizni eng yaxshi ishingiz galereyasini shakllantirish."
+    },
+    "sertificate":{
+        "title":"Ixtisoslashtirilgan o’quv sertifikati"
+    },
+    "comments":{
+        "title":"O’quvchilarning fikrlari",
+        "cardText":"Assalomu alaykum. «NetPro» o'quv markazida Front-End kursini tamomladim. Va hozirda Back-End kursida oʻqiyapman. Kurslar juda zoʻr tashkillashtirilgan. Ustozlar tajribali va «NetPro» jamoasi xushmuomilalik."
+    },
+    "contact":{
+        "title":"Biz bilan bog’laning",
+        "title2":"Kontaktlar",
+        "text":"Bunyodkor shoh ko’chasi"
+    },
+    "footer":{
+        "text1":"Kurslarimiz",
+        "text2":"3d max",
+        "text3":"UX UI dizayn",
+        "text4":"Front-end",
+        "text5":"Back-end",
+        "text6":"Kompyuter savodxonligi",
+        "text7":"Scratch o’yin dasturlash",
+        "text8":"Bo’limlar",
+        "text9":"Kurs haqida",
+        "text10":"O’quvchilar fikri",
+        "text11":"Biz haqimizda",
+        "text12":"Kontakt",
+        "text13":"Biz haqimizda qisqacha",
+        "text14":"NetPro-dasturlashga ilk qadam shu yerdan boshlanadi!",
+        "text15":"Manzil:",
+        "text16":"Toshkent, Chilonzor, Bunyodkor Shoh ko’chasi"
     },
     "course":{
         "title":"Yo'nalishlar bo'yicha kurslar",
