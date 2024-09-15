@@ -138,6 +138,7 @@
     border: 1.5px solid var(--Kulrang-Stroka, #434343);
     border-radius: 4px;
     padding: 25px;
+    height: auto;
   }
   .swiper__card:hover{
     border-width: 1.5px;
@@ -230,7 +231,7 @@
 
   /* kovorking__container style */
   .kovorking__container{
-    width: 50%;
+    width: 70%;
     text-align: center;
     margin: 0 auto;
   }
@@ -253,7 +254,7 @@
     padding-bottom: 50px;
   }
   .kovorking__item{
-    width: 150px;
+    width: 250px;
   }
 
   /* wrapper style */
