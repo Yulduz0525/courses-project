@@ -154,8 +154,9 @@ p{
   width: 100%;
   overflow: hidden;
   position: relative;
-}
+  padding-top: 700px !important;
 
+}
 /* Slider trek */
 .slider-track {
   display: flex;
