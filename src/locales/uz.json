@@ -1,4 +1,89 @@
 {
     "hello1":"Kurs haqida",
-    "hello2":"Biz haqimizda"
+    "hello2":"Biz haqimizda",
+    "header":{
+        "title":"NetPro IT School bilan kelajakni birga quring",
+        "btn1":"Kursga yozilish",
+        "btn2":"Kurs haqida video"
+    },
+    "course":{
+        "title":"Yo'nalishlar bo'yicha kurslar",
+        "name1":"Frontend dasturlash",
+        "name2":"UI UX Dizayn",
+        "name3":"Backend",
+        "text1":"Veb-sahifa va veb-ilovalarning foydalanuvchiga koʻrinadigan qismini hosil qilish sohasidir.",
+        "text2":"Tadqiqot va fikr-mulohazalarni foydalanuvchilar ehtiyojlarini qondirish interfeyslarni yaratishga yordam beradi.",
+        "text3":"Maʼlumotlarni veb-brauzerning foydalanuvchi koʻradigan qismiga qanday uzatilishini taʼminlaydi.",
+        "btn1":"Texnologiyalar",
+        "btn2":"Karta orqali to'lov",
+        "subtxt1":"6 oy davomiyligi",
+        "subtxt2":"4 ta modul"
+    },
+    "section":{
+        "title":"Keyingi qadam",
+        "name":"Birinchi kursdan so'ng siz qaerga va qanday davom etishni tanlashingiz mumkin",
+        "cardtitle1":"Bandlikga yordam berish",
+        "cardtitle2":"Amaliyotlarda ishtirok etish",
+        "text1":"Bizning maqsadimiz sizga ta'lim va kasbiy rivojlanish maqsadlaringizni ro’yobga chiqaradigan va o’qish davomida yaxshi natijalar ko’rsatgan NetPro o’quv markazining muvaffaqiyatli bitiruvchilariga ishga joylashishda faol yordam beramiz.",
+        "text2":"Amaliyot ko'nikmalarni takomillashtirish va bilim olishning kalitidir. Faol ishtirok etish orqali siz takrorlash, tajriba va fikr-mulohazalar orqali o'rganasiz va boshqa ishtirokchilar bilan birgalikda siz loyihalar g'oyalarini amalga oshirasiz va olingan bilimlarni amalda ishlab chiqasiz.",
+        "subtxt1":"Ish turi",
+        "subtxt2":"Ofis ishi",
+        "subtxt3":"Ish haqqi",
+        "subtxt4":"2 000 000 dan 7 000 000 gacha",
+        "subtxt5":"Ish tajribasi",
+        "subtxt6":"1 yildan 3 yilgacha"
+    },
+    "kovorking":{
+        "title":"Kovorking",
+        "text":"Kovorking-bu talabalarimiz qo'shimcha ravishda mashq qilishlari va tajribali ma'murlar nazorati ostida uy vazifalarini bajarishlari uchun zarur bo'lgan barcha narsalar bilan jihozlangan ofis.",
+        "kovorking__text1":"Uy vazifasini mashq qilish va bajarish",
+        "kovorking__text2":"O'quv dasturini qo'llab-quvvatlash va yordam",
+        "kovorking__text3":"IT mutaxassislarining maslahatlari"
+    },
+    "wrapper":{
+        "title":"Mavjud vakansiyalar",
+        "name1":"3d model",
+        "name2":"Frontend react",
+        "text1":"Biz jamoamizga yuqori malakali va tajribali 3D modellashtirish bo'yicha mutaxassisni qidirmoqdamiz. Ideal nomzod 3D modellashtirish texnikasi, dasturiy ta'minot va sanoatning eng yaxshi amaliyotlarini yaxshi bilishi kerak.",
+        "text2":"Biz jamoamizga yuqori motivatsiyali va malakali Frontend ishlab chiquvchisini qidirmoqdamiz. Ideal nomzod frontendni ishlab chiqish tamoyillari va foydalanuvchi tajribasini yaratish ishtiyoqi haqida chuqur bilimga ega bo'lishi kerak.",
+        "text3":"Toshkent shahr",
+        "text4":"Javob qoldirish",
+        "subtitle1":"Kurs haqida video tanishtiruv",
+        "subtitle2":"Bir marta to’lov qilib butun kursni sotib olish uchun quyidagi tugmani bosing!"
+    },
+    "slider":{
+        "title":"O'qituvchilarimiz",
+        "name1":"Shaxlo Jo’raeva",
+        "name2":"Tohir Botirov",
+        "name3":"Abror Abdullaev",
+        "text1":"Dasturlash o’qituvhcisi",
+        "text2":"3d max o’qituvhcisi",
+        "text3":"UX UI dizayn o’qituvchisi"
+    },
+    "cards":{
+        "title":"Platformada o'qitish qanday amalga oshiriladi",
+        "name1":"Gurux suxbati",
+        "text1":"Har bir mini-guruh uchun Telegram-da suhbat yaratiladi, unda talabalar barcha o'quv masalalarini muhokama qilishlari mumkin. Siz har doim o'qituvchidan tezkor fikr-mulohazalarni olishingiz yoki guruhingiz bilan suhbatlashishingiz mumkin.",
+        "name2":"Uy vazifalarini tahlil qilish",
+        "text2":"Har bir dars oxirida siz uyda mustaqil ishlash uchun topshiriqlar olasiz. O'qituvchi sizning ishingizni 10 balli shkala bo'yicha shaxsan tekshiradi, sharhlaydi va baholaydi. Siz kodni ko'rib chiqish va kodni sifatli takomillashtirish bo'yicha tavsiyalar olasiz.",
+        "name3":"Ish bilan taminlash",
+        "text3":"Biz talabalarimizga rezyume yozishda yordam beramiz, o'qituvchilar tavsiyalar berishga tayyor. Biz it-mutaxassislarning eng yirik ish bazalari va rezyumelari-Kwork va Upwork bilan ishlaymiz.",
+        "name4":"Sertifikat",
+        "text4":"O'qishni tugatgandan so'ng siz sertifikat va hujjatni olasiz, unda quyidagilar ko'rsatiladi: - O'zlashtirilgan texnologiyalar to'plami;- Butun kurs uchun o'rtacha ball.- Hal qilingan uy vazifalari soni.- Yakuniy loyiha.",
+        "name5":"Kurator bilan ishlash",
+        "text5":"Siz bitta o'qituvchi, professional ishlab chiquvchi bilan shaxsan ishlaysiz, u sizga darsda ham, uy vazifangizni demontaj qilishda va sharhlar berishda ham yordam beradi.",
+        "name6":"Tayyor portfel",
+        "text6":"Har bir kursda talabalar o'z portfellariga qo'shilishi mumkin bo'lgan haqiqiy loyihalarni amalga oshiradilar, bu esa ish qidirishda katta yordam beradi."
+    },
+    "question":{
+        "title":"Tez-tez so’raladigan savollar",
+        "name1":"Dasturchi bo’la olamanmi?",
+        "name2":"Trening boshlash uchun nima kerak?",
+        "name3":"Men nima olaman?",
+        "name4":"Menga noutbook kerakmi?",
+        "name5":"Sizga kim dars beradi?",
+        "name6":"Ushbu sertifikat bilan ish topa olamanmi?",
+        "text":"Har kim rivojlanish bilan shug'ullanishi mumkin. Kurslar asoslardan boshlanadi, shuning uchun sizdan IT sohasida qo'shimcha ma'lumot talab qilinmaydi. Dasturchi bo'lish uchun siz matematik yoki muhandis bo'lishingiz va biron bir maxsus fikrga ega bo'lishingiz shart emas. Kursni muvaffaqiyatli yakunlash uchun siz o'zingizga shubha qilishni to'xtatishingiz, dangasa bo'lmasligingiz va barcha vazifalarni bajarishingiz kerak."
+    }
+
 }

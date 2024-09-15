@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import RootLayout from '../layout/RootLayout'
 import MainPage from '../page/MainPage'
-import AboutCourse from '../page/AboutCourse'
+import AboutCourse from '../page/AboutCourse/AboutCourse'
 
 const Router = () => {
   return (

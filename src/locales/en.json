@@ -1,4 +1,88 @@
 {
     "hello1":"About the course",
-    "hello2":"about Us"
+    "hello2":"about Us",
+    "header": {
+    "title": "Build the future with NetPro IT School",
+    "btn1": "Enroll in the course",
+    "btn2": "Watch the course video"
+  },
+  "course": {
+    "title": "Courses by directions",
+    "name1": "Frontend Development",
+    "name2": "UI UX Design",
+    "name3": "Backend",
+    "text1": "This is the field of creating the visible part of websites and web applications for users.",
+    "text2": "Research and feedback help create interfaces that meet user needs.",
+    "text3": "Ensures how data is transmitted to the part visible to the user in the web browser.",
+    "btn1": "Technologies",
+    "btn2": "Payment by card",
+    "subtxt1": "Duration of 6 months",
+    "subtxt2": "4 modules"
+  },
+  "section": {
+    "title": "Next Step",
+    "name": "After the first course, you can choose where and how to continue",
+    "cardtitle1": "Employment Assistance",
+    "cardtitle2": "Participate in Internships",
+    "text1": "Our goal is to provide active support for successful graduates of the NetPro center in finding employment, who have shown good results during their studies.",
+    "text2": "Practice is the key to improving skills and gaining knowledge. By participating actively, you will learn through repetition, experience, and feedback, and together with other participants, you will implement project ideas and develop the acquired knowledge in practice.",
+    "subtxt1": "Job Type",
+    "subtxt2": "Office work",
+    "subtxt3": "Salary",
+    "subtxt4": "From 2,000,000 to 7,000,000",
+    "subtxt5": "Work Experience",
+    "subtxt6": "From 1 to 3 years"
+  },
+  "kovorking": {
+    "title": "Coworking",
+    "text": "Coworking is an office equipped with everything necessary for our students to additionally practice and complete homework under the supervision of experienced administrators.",
+    "kovorking__text1": "Practice and complete homework",
+    "kovorking__text2": "Support and assistance with the curriculum",
+    "kovorking__text3": "Advice from IT professionals"
+  },
+  "wrapper": {
+    "title": "Available Vacancies",
+    "name1": "3D Modeling",
+    "name2": "Frontend React",
+    "text1": "We are looking for a highly skilled and experienced 3D modeling specialist to join our team. The ideal candidate should have a solid understanding of 3D modeling techniques, software, and industry best practices.",
+    "text2": "We are looking for a highly motivated and qualified Frontend Developer to join our team. The ideal candidate should have a deep understanding of frontend development principles and a passion for creating user experiences.",
+    "text3": "Tashkent city",
+    "text4": "Leave a response",
+    "subtitle1": "Course video introduction",
+    "subtitle2": "Click the button below to purchase the entire course with a one-time payment!"
+  },
+  "slider": {
+    "title": "Our Teachers",
+    "name1": "Shakhlo Juraeva",
+    "name2": "Tokhir Botirov",
+    "name3": "Abror Abdullaev",
+    "text1": "Programming teacher",
+    "text2": "3D Max teacher",
+    "text3": "UX UI Design teacher"
+  },
+  "cards": {
+    "title": "How teaching is conducted on the platform",
+    "name1": "Group chat",
+    "text1": "A chat is created in Telegram for each mini-group where students can discuss all educational issues. You can always get quick feedback from the teacher or communicate with your group.",
+    "name2": "Homework analysis",
+    "text2": "At the end of each lesson, you will receive assignments for independent work at home. The teacher personally checks, comments, and grades your work on a 10-point scale. You will receive recommendations on code review and improving the quality of your code.",
+    "name3": "Employment assistance",
+    "text3": "We help our students write resumes, and teachers are ready to provide recommendations. We work with the largest job and resume bases for IT professionals – Kwork and Upwork.",
+    "name4": "Certificate",
+    "text4": "After completing your studies, you will receive a certificate and a document that includes: - The set of technologies mastered; - The average score for the entire course; - The number of homework assignments completed; - The final project.",
+    "name5": "Work with a curator",
+    "text5": "You will work personally with a mentor, a professional developer who will assist you both during the lessons and in reviewing your homework and providing feedback.",
+    "name6": "Prepared portfolio",
+    "text6": "In each course, students complete real projects that can be added to their portfolios, which greatly helps in job searching."
+  },
+  "question": {
+    "title": "Frequently Asked Questions",
+    "name1": "Can I become a developer?",
+    "name2": "What is needed to start the training?",
+    "name3": "What will I get?",
+    "name4": "Do I need a laptop?",
+    "name5": "Who will teach you?",
+    "name6": "Can I find a job with this certificate?",
+    "text": "Anyone can engage in development. The courses start with the basics, so no additional knowledge in IT is required from you. You don't have to be a mathematician, engineer, or have any special mindset to become a developer. To successfully complete the course, you need to stop doubting yourself, not be lazy, and complete all assignments."
+  }
 }
