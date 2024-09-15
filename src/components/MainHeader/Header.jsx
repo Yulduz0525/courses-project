@@ -5,6 +5,7 @@ import BtnVideoSvg from '../../icons/BtnVideoSvg'
 import Slider from '../Slider/Slider'
 import MainModal from '../MainModal/MainModal'
 import { Link, useLocation } from 'react-router-dom'
+import ChatSvg from '../../icons/ChatSvg'
 const Header = () => {
     const location = useLocation();
     useEffect(() => {
@@ -48,6 +49,9 @@ const Header = () => {
                 <MainModal setShowMainModal={setShowMainModal} showMainModal={showMainModal}/>
             </div> 
         }
+        {/* <button className='Chat'>
+            <ChatSvg/>
+        </button> */}
         </>
         
     )

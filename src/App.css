@@ -64,9 +64,25 @@
   border-color: #149ED5;
   transition: all linear 0.3s;
 }
-.custom-dropdown-item:hover{
-  cursor: pointer;
+
+.custom-dropdown-item {
+  background-color: white;
+  transition: all linear 0.3s;
 }
+
+.custom-dropdown-item:hover {
+  cursor: pointer;
+  background-color: #c8c9cf;
+}
+.arrowImg{
+  transition: transform 0.5s ease;
+
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
+
 @media (max-width:750px) {
   .hidden {
     display: none;
@@ -212,6 +228,11 @@ p {
   .slide {
     width: 28% !important;
   }
+}
+
+.Chat{
+  position: sticky;
+  right: 20px;
 }
 
 /* slider */
