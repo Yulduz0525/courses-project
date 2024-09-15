@@ -5,6 +5,7 @@ import AboutUs from '../components/AboutUs/AboutUs'
 import NetPro from '../components/NetPro/NetPro'
 import Sertificate from '../components/Sertificate/Sertificate'
 import Comments from '../components/Comments/Comments'
+import Contact from '../components/Contact/Contact'
 
 const MainPage = () => {
   return (
@@ -15,6 +16,7 @@ const MainPage = () => {
       <NetPro/>
       <Sertificate/>
       <Comments/>
+      <Contact/>
     </div>
   )
 }

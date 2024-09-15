@@ -436,3 +436,16 @@ padding: 15px 0;
   flex: 0 0 100%;
   min-width: 0;
 }
+.slick-carousel-item{
+  background-color:#15182F;
+  border: 1px solid #434343;
+  border-radius: 4px;
+}
+.carousel-slide {
+  padding: 0 10px; /* Slaydlar orasiga gap (bo'shliq) qo'shish */
+}
+
+.carousel-container .slick-slide > div {
+  display: flex;
+  justify-content: center; 
+}
