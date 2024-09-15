@@ -23,7 +23,6 @@ const Navbar = () => {
     const toggleMenu = () =>{
         setShowMenu(!showMenu)
     }
-//    showMenu === true && document.addEventListener('click',toggleMenu)
     const navLink = [
         {
             linkName: "Kurs haqida",
@@ -44,7 +43,7 @@ const Navbar = () => {
     ]
     return (
         <div>
-            <nav className={`${scrolled && 'scrolled'} position-fixed top-0 left-0 w-100 bg-transparent z-50 d-flex justify-content-center`}>
+            <nav className={`${scrolled && 'scrolled'} position-fixed top-0 left-0 w-100  d-flex justify-content-center`}>
                 <div className='container'>
                     <div className='d-flex justify-content-between align-items-center text-white w-full py-3' >
                         <div>
