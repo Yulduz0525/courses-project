@@ -21,8 +21,6 @@ import '../../components/PriceModal/Modal'
 import { t } from 'i18next'
 import logo from '../../assets/logo.png'
 
-
-
 const AboutCourse = () => {
   const backgroundStyle = {
     backgroundImage: `url(${backg})`,
@@ -34,6 +32,7 @@ const AboutCourse = () => {
   
   return (
     <>
+ 
    {/* Header */}
     <div className='header text-center'style={backgroundStyle}>
      <div className='container header__container'>
@@ -497,7 +496,10 @@ const AboutCourse = () => {
        </div>
        </div>
       </div>
+      <div id='courses-video'>
       <iframe width="100%" height="600px" src="https://www.youtube.com/embed/hPbDyqzxQfU?si=Qx-myYGoSYkvymtf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      
    
 
       </div>
@@ -857,9 +859,9 @@ const AboutCourse = () => {
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <img className='logo' src={logo} alt="logo" />
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <img className='logo' src={logo} alt="logo" />
       <div class="modal-body" style={{textAlign:"center"}}>
         <form className='modal__form' action="modal__form" >
           <label>ID raqami</label><br />

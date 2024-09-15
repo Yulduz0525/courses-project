@@ -1,11 +1,101 @@
 {
-    "hello1":"About the course",
-    "hello2":"about Us",
+    "nav": {
+    "link1": "About the Course",
+    "link2": "About Us",
+    "link3": "Student Feedback",
+    "link4": "Contact"
+},
     "header": {
     "title": "Build the future with NetPro IT School",
     "btn1": "Enroll in the course",
-    "btn2": "Watch the course video"
+    "btn2": "Watch the course video",
+     "mainTitle": "Professional Development Training Courses",
+    "additionalText": "By enrolling in our IT professional training courses, you will have the opportunity to receive industry-recognized certificates that can enhance your career prospects."
   },
+  "advantages": {
+    "title": "Our Advantages",
+    "additionalText": "We are currently on our way to achieving our goals—join us too!",
+    "card1Title": "Masters of Their Craft",
+    "card2Title": "Not Just a Course",
+    "card3Title": "Interactive Lessons",
+    "card4Title": "Theory and Practice",
+    "card5Title": "Need a Mentor?",
+    "card6Title": "Certificate",
+    "card1Text": "Our instructors have years of experience in their fields, allowing them to share valuable lessons and advanced practices with their students.",
+    "card2Text": "Each course is designed so that upon successful completion, you can become a modern professional and start your career in the field.",
+    "card3Text": "Our interactive lessons immerse you in innovative teaching methods that use interactivity to engage students and retain knowledge.",
+    "card4Text": "Practical experience helps test theories in real conditions, enhance skills, and bridge the gap between theory and real-world applications.",
+    "card5Text": "It's natural to have questions during your learning process. If you reach out to mentors, they will guide you in finding solutions to your issues.",
+    "card6Text": "Continuous professional development and certification help certified specialists remain competitive and relevant in their fields.",
+    "title2": "Choose Your Path!",
+    "text": "Ready to embark on a journey of discovery in the world of programming? This course is designed to help you explore various programming specializations and find the path that aligns with your interests and career goals. Through interactive exercises, mentorship, and practical projects, you'll explore different programming fields and uncover the path that best fits your skills and passions. Join us in this exciting exploration and take the first step towards a rewarding career in programming.",
+    "title3": "Courses by Specialization",
+    "text2": "Learn one of the modern fields and become a sought-after professional!",
+    "frontend": "Frontend",
+    "design": "UX / UI Design",
+    "3dmax": "3D Max",
+    "backend": "Backend",
+    "computerLiteracy": "Computer Literacy",
+    "scratch": "Scratch",
+    "detailedBtn": "Details",
+    "coursesBtn": "Upcoming Courses"
+},
+"aboutUs": {
+    "title": "About Us",
+    "title2": "Who Are We?",
+    "text": "NetPro IT School has been operating since 2020. At our center, you have the opportunity to learn computer literacy, Front-end, Back-end, SMM, Scratch, and English. Our training center provides all the necessary conditions for studying in these fields, and our offices are equipped with computer equipment. Our instructors are qualified professionals in their fields and will provide all the necessary guidance for proper education. Our classes are primarily focused on practical work, with 20% theoretical and 80% practical content."
+},
+"netPro": {
+    "title": "Why NetPro?",
+    "title01": "Quality Education",
+    "title02": "Regular Competitions",
+    "title03": "Job Placement Guarantee",
+    "title04": "Certificate",
+    "title05": "Affordable and High Quality",
+    "title06": "Free Open Class Enrollment",
+    "title07": "From 0 to Income in 2 Months",
+    "title08": "Mentors with 3+ Years Experience",
+    "title09": "Portfolio and Resume Building",
+    "text01": "Regularly updated courses and instructors with extensive experience.",
+    "text02": "Weekly and monthly hackathons in programming.",
+    "text03": "Job placement guarantee for exemplary graduates.",
+    "text04": "Students who complete the course with distinction receive diplomas and certificates.",
+    "text05": "High-quality instruction at affordable prices.",
+    "text06": "Free open class designed to explore limitless opportunities.",
+    "text07": "A journey that paves the way to your income in 2 months.",
+    "text08": "Mentors with 3 years of experience guiding ambitious individuals.",
+    "text09": "Building a gallery of your best work in your resume and portfolio."
+},
+"certificate": {
+    "title": "Specialized Training Certificate"
+},
+"comments": {
+    "title": "Student Feedback",
+    "cardText": "Hello. I completed the Front-End course at ‘NetPro’ training center. I am currently studying the Back-End course. The courses are very well organized. The instructors are experienced, and the ‘NetPro’ team is welcoming."
+},
+"contact": {
+    "title": "Contact Us",
+    "title2": "Contacts",
+    "text": "Bunyodkor Shah Street"
+},
+"footer": {
+    "text1": "Our Courses",
+    "text2": "3D Max",
+    "text3": "UX UI Design",
+    "text4": "Front-End",
+    "text5": "Back-End",
+    "text6": "Computer Literacy",
+    "text7": "Scratch Programming",
+    "text8": "Sections",
+    "text9": "About the Course",
+    "text10": "Student Feedback",
+    "text11": "About Us",
+    "text12": "Contact",
+    "text13": "Brief About Us",
+    "text14": "NetPro—Your first step in programming starts here!",
+    "text15": "Address:",
+    "text16": "Tashkent, Chilonzor, Bunyodkor Shah Street"
+},
   "course": {
     "title": "Courses by directions",
     "name1": "Frontend Development",
