@@ -13,8 +13,8 @@ const CommentCarousel = () => {
     slidesToShow: 3, // Bir vaqtning o'zida 3ta slaydni ko'rsatish
     slidesToScroll: 1, // Bitta slaydni scroll qilish
     customPaging: (i) => (
-        <button>{i + 1}</button>
-      ),
+      <button className="custom-dot">{i + 1}</button>
+    ),
     responsive: [
       {
         breakpoint: 1160,

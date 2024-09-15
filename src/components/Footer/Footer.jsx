@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <h4 className='fw-bold fs-5 footer-ul-title'>Biz haqimizda qisqacha</h4>
-                        <p className='footer-p-title'>NetPro-dasturlashga ilk qadam shu <br /> yerdan boshlanadi!</p>
+                        <p className='footer-p-title'>NetPro-dasturlashga ilk qadam shu <br /> yerdan boshlanadi! <br /> </p>
                         <h4 className='fw-bold fs-5 footer-ul-title'>Manzil:</h4>
                         <p className='footer-p-title'>Toshkent, Chilonzor, Bunyodkor Shoh ko’chasi</p>
                         <div className='d-flex gap-2 py-2'>

@@ -3,7 +3,7 @@ import ArrowSvg from '../../icons/ArrowSvg'
 import AboutUsImg from "../../assets/AboutUsImg.png"
 const AboutUs = () => {
     return (
-        <div className='container'>
+        <div id='aboutUs' className='container'>
             <div className='pt-4 pb-5'>
                 <h3 className='ad_title fw-bold'>Biz haqimizda</h3>
                 <div className='d-flex align-items-center gap-5 aboutUs-wrapper py-5'>

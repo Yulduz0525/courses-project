@@ -1,6 +1,7 @@
 /* navbar */
-.menuLink{
-  transition: all linear 0.3s;
+.menuLink {
+  color: white; 
+  transition: color 0.3s ease;
 }
 .menuLink:hover{
   color: rgb(113, 113, 248);
@@ -442,10 +443,58 @@ padding: 15px 0;
   border-radius: 4px;
 }
 .carousel-slide {
-  padding: 0 10px; /* Slaydlar orasiga gap (bo'shliq) qo'shish */
+  padding: 0 10px; 
 }
 
 .carousel-container .slick-slide > div {
   display: flex;
   justify-content: center; 
+}
+.custom-dot {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active .custom-dot {
+  background-color:#15182F; /* Faol indikator uchun rang */
+}
+/* contact */
+
+@media (max-width:1060px){
+  .contact-wrapper{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-title{
+    text-align: center;
+  }
+  .contact-btn{
+    display: flex;
+    gap: 35px;
+  }
+  .contactBtnWrapper{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width:640px){
+  .contact-btn{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact_location iframe{
+    width: 450px;
+  }
+}
+@media (max-width:500px){
+  .contact_location iframe{
+    width: 350px;
+  }
 }

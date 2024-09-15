@@ -30,15 +30,15 @@ const Navbar = () => {
         },
         {
             linkName: "Biz haqimizda",
-            path: ""
+            id: "aboutUs"
         },
         {
             linkName: "O’quvchilar fikri",
-            path: ""
+            id: "comments"
         },
         {
             linkName: "Kontakt",
-            path: ""
+            id: "contacts"
         }
     ]
     return (
@@ -52,11 +52,11 @@ const Navbar = () => {
                             </Link>
                         </div>
                         <div className='hidden'>
-                            <ul className='d-flex align-items-center gap-3 list-unstyled'>
+                            <ul className='d-flex align-items-center gap-5 list-unstyled'>
                                 {
                                     navLink?.map((item, index) => (
-                                        <li key={index} className="">
-                                            <Link to={item.path} className="text-white text-decoration-none menuLink">{item.linkName}</Link>
+                                        <li key={index} onClick={() => scrollToSection(item.id)}>
+                                            <Link to={item.path} className="text-decoration-none menuLink">{item.linkName}</Link>
                                         </li>
                                     ))
                                 }
