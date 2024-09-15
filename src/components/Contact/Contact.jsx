@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ContactImg1Svg from '../../icons/ContactImg1Svg'
 import ContactImg2Svg from '../../icons/ContactImg2Svg'
 import ArrowSvg from '../../icons/ArrowSvg'
+import MainModal from '../MainModal/MainModal'
 const Contact = () => {
+    const [showMainModal,setShowMainModal] = useState(false)
+    const showModal = () =>{
+        setShowMainModal(!showMainModal)
+    }
     return (
         <div id='contacts' className='container py-5'>
             <h1  className='ad_title fw-bold pb-4'>Biz bilan bog’laning</h1>
@@ -20,7 +25,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='contactBtnWrapper'>
-                        <button className='mainBtn text-white rounded-md d-flex align-items-center border-0 mt-4'>Kursga yozilish <ArrowSvg /></button>
+                        <button onClick={showModal} className='mainBtn text-white rounded-md d-flex align-items-center border-0 mt-4'>Kursga yozilish <ArrowSvg /></button>
                     </div>
                 </div>
                 <div className='contact_location'>
@@ -35,6 +40,11 @@ const Contact = () => {
                     ></iframe>
                 </div>
             </div>
+            {
+                showMainModal && <div className='mainModalWrapper'>
+                    <MainModal setShowMainModal={setShowMainModal} showMainModal={showMainModal} />
+                </div>
+            }
         </div>
     )
 }

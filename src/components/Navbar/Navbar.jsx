@@ -4,9 +4,11 @@ import Logo from "../../assets/logo.png"
 import Language from '../../components/Language/Language'
 import MenuBarSvg from '../../icons/MenuBarSvg'
 import ArrowSvg from '../../icons/ArrowSvg'
+import { useTranslation } from 'react-i18next'
 const Navbar = () => {
     const [showMenu,setShowMenu] = useState(false)
     const [scrolled, setScrolled] = useState(false)
+    const { t } = useTranslation();
     const scrollToSection = (id) => {
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
       };
@@ -25,7 +27,7 @@ const Navbar = () => {
     }
     const navLink = [
         {
-            linkName: "Kurs haqida",
+            linkName: t('nav.link1'),
             path: "aboutCours"
         },
         {
@@ -39,7 +41,7 @@ const Navbar = () => {
         {
             linkName: "Kontakt",
             id: "contacts"
-        }
+        },
     ]
     return (
         <div>
@@ -47,8 +49,8 @@ const Navbar = () => {
                 <div className='container'>
                     <div className='d-flex justify-content-between align-items-center text-white w-full py-3' >
                         <div>
-                            <Link to={'/'}>
-                                <img src={Logo} />
+                            <Link to={'/'} >
+                                <img onClick={() => scrollToSection(item.id)} src={Logo} />
                             </Link>
                         </div>
                         <div className='hidden'>
@@ -71,9 +73,9 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <div className={`${showMenu === true ? "showMenu":'d-none'}`}>
+            <div className={`${showMenu === true ? "showMenu":'closeMenu'}`}>
                 <div className='mobileMenu'>
-                    <div className='text-white d-flex justify-content-end px-5 pt-3' onClick={toggleMenu}><p className='close px-2'>X</p></div>
+                    <div className='text-white d-flex justify-content-end px-5 pt-3 closeMenuX' onClick={toggleMenu}><p className='close px-2'>X</p></div>
                     <div className='d-flex align-items-center internal_mobileMenu px-5 justify-content-between'>
                         <img src={Logo} alt='logo'/>
                         <Language/>

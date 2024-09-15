@@ -3,7 +3,6 @@ import './AboutCourse.css'
 import backg from '../../assets/backg.png'
 import vidicon from '../../assets/vidicon.png'
 import kovorking from '../../assets/covorking.png'
-import macbuk from '../../assets/macbuk.png'
 import teacher1 from '../../assets/teacher1.png'
 import teacher2 from '../../assets/teacher2.png'
 import teacher3 from '../../assets/teacher3.png'
@@ -18,15 +17,14 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-
+import { t } from 'i18next'
 
 const AboutCourse = () => {
   const backgroundStyle = {
     backgroundImage: `url(${backg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "580px", 
+    height: "650px", 
     width: "100%", 
   };
   
@@ -36,17 +34,16 @@ const AboutCourse = () => {
     <div className='header text-center'style={backgroundStyle}>
      <div className='container header__container'>
      <h1 className='header__title text-6xl text-white font-bold'>
-        NetPro IT School bilan 
-      kelajakni birga quring</h1>
+        {t('header.title')}</h1>
       <div className='header__wrap flex my-0 mx-auto w-1/2'> 
-        <a className='header__link text-white py-5 px-7' href="#">
-          Kursga yozilish
+        <a className='mainBtn text-white rounded-md d-flex align-items-center border-0 text-decoration-none' href="#">
+        Kursga yozilish
           <i class="fa-solid fa-arrow-right"></i>
         </a>
         <div className='header__wrap_link'>
           <img src={vidicon} alt="video-icon" />
-          <a className='header__link_right' href="#">
-            Kurs haqida video
+          <a className='header__link_right' href="#"> 
+          {t('header.btn2')}
             </a>
         </div>
       </div>
@@ -55,8 +52,9 @@ const AboutCourse = () => {
 
     {/* Course */}
     <div className='course'>
+      <div className='container'>
       <h2 className='about__title'>
-        Yo’nalishlar bo’yicha kurslar
+        {t('course.title')}
         </h2>
         <Swiper
         style={{paddingTop:"50px", paddingBottom:"80px"}}
@@ -88,17 +86,17 @@ const AboutCourse = () => {
           <div className='swiper__card'>
           <i class="fa-solid fa-code"></i>
           <h3 className='swiper__title'>
-            Frontend dasturlash
+          {t('course.name1')}
           </h3>
           <p className='swiper__text'>
-          Veb-sahifa va veb-ilovalarning foydalanuvchiga koʻrinadigan qismini hosil qilish sohasidir.
+          {t('course.tex1')}
           </p>
           <Accordion style={{background: "#15182F",textAlign:"center"}}>
         <AccordionSummary
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'>Texnologiyalar</h2>
+          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'>{t('course.btn1')}</h2>
           {<ArrowDropDownIcon />}
           </Typography>
         </AccordionSummary>
@@ -112,15 +110,15 @@ const AboutCourse = () => {
         </AccordionDetails>
       </Accordion>
       <button className='swiper__btn'>
-        Karta orqali to'lov
+      {t('course.btn2')}
         <i class="fa-solid fa-arrow-right"></i>
       </button>
       <div className='swiper__wrapper'>
         <p className='swiper__text'>
-        6 oy davomiyligi
+        {t('course.subtext1')}
         </p>
         <p className='swiper__text'>
-        4 ta modul
+        {t('course.subtext2')}
         </p>
       </div>
           </div>
@@ -130,17 +128,17 @@ const AboutCourse = () => {
         <div className='swiper__card'>
         <i class="fa-solid fa-code-compare"></i>
           <h3 className='swiper__title'>
-            Frontend dasturlash
+          {t('course.name2')}
           </h3>
           <p className='swiper__text'>
-          Veb-sahifa va veb-ilovalarning foydalanuvchiga koʻrinadigan qismini hosil qilish sohasidir.
+          {t('course.text2')}
           </p>
           <Accordion style={{background: "#15182F",textAlign:"center"}}>
         <AccordionSummary
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'>Texnologiyalar</h2>
+          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'>{t('course.btn1')}</h2>
           {<ArrowDropDownIcon />}
           </Typography>
         </AccordionSummary>
@@ -154,12 +152,12 @@ const AboutCourse = () => {
         </AccordionDetails>
       </Accordion>
       <button className='swiper__btn'>
-        Karta orqali to'lov
+      {t('course.btn2')}
         <i class="fa-solid fa-arrow-right"></i>
       </button>
       <div className='swiper__wrapper'>
         <p className='swiper__text'>
-        6 oy davomiyligi
+        {t('course.subtext1')}
         </p>
         <p className='swiper__text'>
         4 ta modul
@@ -332,10 +330,13 @@ const AboutCourse = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      </div>
     </div>
 
     {/* section */}
     <div className='section'>
+      <div className='container'>
       <h1 className='about__title'>
       Keyingi qadam
       </h1>
@@ -391,16 +392,18 @@ const AboutCourse = () => {
       </ul>
       </div>
      </div>
+
+      </div>
     </div>
     {/* kovorking */}
     <div className='kovorking'  style={{
         width: '100%',
-        height: '80%',
+        height: '600px',
         backgroundImage: `url(${kovorking})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        position:'absolute',
+        // position:'absolute',
         right:'0',
         left:'0'
         }}>
@@ -440,6 +443,7 @@ const AboutCourse = () => {
 
     {/* wrapper */}
     <div className='wrapper'>
+      <div className='container'>
       <h1 className='about__title'>
       Mavjud vakansiyalar
       </h1>
@@ -485,11 +489,18 @@ const AboutCourse = () => {
         </a>
        </div>
       </div>
+      <div id='courses-video'>
       <iframe width="100%" height="600px" src="https://www.youtube.com/embed/hPbDyqzxQfU?si=Qx-myYGoSYkvymtf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+      </div>
+      
+   
+
+      </div>
+       </div>
 
     {/* slider */}
     <div className='slider'>
+      <div className='container'>
       <h1 className='about__title'>
         O'qituvchilarimiz
       </h1>
@@ -564,11 +575,14 @@ const AboutCourse = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      </div>
     </div>
 
     {/* cards */}
 
     <div className='cards'>
+      <div className='container'>
       <h1 className='about__title'>
       Platformada o'qitish qanday amalga oshiriladi
       </h1>
@@ -664,10 +678,13 @@ const AboutCourse = () => {
           </p>
         </li>
       </ul>
+
+      </div>
     </div>
 
     {/* questions */}
     <div className='question'>
+      <div className='container'>
       <h1 className='about__title'>
       Tez-tez so’raladigan savollar
       </h1>
@@ -684,7 +701,7 @@ const AboutCourse = () => {
             <h3 className='question__name'>
             Dasturchi bo’la olamanmi?
             </h3>
-          {<ArrowDropDownIcon />}
+         
           </Typography>
         </AccordionSummary>
         <AccordionDetails>  
@@ -707,7 +724,7 @@ const AboutCourse = () => {
             <h3 className='question__name'>
             Dasturchi bo’la olamanmi?
             </h3>
-          {<ArrowDropDownIcon />}
+         
           </Typography>
         </AccordionSummary>
         <AccordionDetails>  
@@ -730,7 +747,7 @@ const AboutCourse = () => {
             <h3 className='question__name'>
             Dasturchi bo’la olamanmi?
             </h3>
-          {<ArrowDropDownIcon />}
+        
           </Typography>
         </AccordionSummary>
         <AccordionDetails>  
@@ -753,7 +770,7 @@ const AboutCourse = () => {
             <h3 className='question__name'>
             Dasturchi bo’la olamanmi?
             </h3>
-          {<ArrowDropDownIcon />}
+        
           </Typography>
         </AccordionSummary>
         <AccordionDetails>  
@@ -776,7 +793,7 @@ const AboutCourse = () => {
             <h3 className='question__name'>
             Dasturchi bo’la olamanmi?
             </h3>
-          {<ArrowDropDownIcon />}
+        
           </Typography>
         </AccordionSummary>
         <AccordionDetails>  
@@ -799,7 +816,7 @@ const AboutCourse = () => {
             <h3 className='question__name'>
             Dasturchi bo’la olamanmi?
             </h3>
-          {<ArrowDropDownIcon />}
+
           </Typography>
         </AccordionSummary>
         <AccordionDetails>  
@@ -820,6 +837,8 @@ const AboutCourse = () => {
       </div>
       <div className='bottom'>
       <i class="fa-solid fa-comment-dots"></i>
+      </div>
+
       </div>
       
 
