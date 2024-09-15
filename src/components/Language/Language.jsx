@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { initReactI18next, useTranslation } from 'react-i18next';
 import NavArrow from "../../assets/navArrow.png"
-import en from "../../locales/en.json"
-import uz from "../../locales/uz.json"
-import ru from "../../locales/ru.json"
-import {resorce} from "../../locales/index"
+// import '../../i18next';
+// import i18next from 'i18next';
 const Language = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [rotate,setRotate] = useState(false)
