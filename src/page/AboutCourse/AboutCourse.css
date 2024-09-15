@@ -1,8 +1,11 @@
 .header{
-    position: absolute;
-    right: 0;
-    left: 0;
     text-align: center;
+    text-decoration: none;
+
+  }
+  .container{
+    text-decoration: none;
+    list-style: none;;
   }
   .header__wrap{
     display: flex;
@@ -59,17 +62,13 @@
     line-height: 74px;
     width: 760px;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   /* course style */
   .course{
-    padding-top: 700px;
-    background-image: 
-    linear-gradient(90deg, transparent 49.5%,rgba(168, 166, 166, 0.1) 50%, rgba(104, 102, 102, 0.1) 50%, transparent 51%),
-    linear-gradient(180deg, transparent 49.5%,rgba(130, 127, 127, 0.1) 50%, rgba(85, 83, 83, 0.1) 50%, transparent 51%);
-    background-size:150px 100px;
-    background-attachment: fixed;
+    padding-top: 100px;
+    text-align: center;
   }
   .about__title{
     color: white; 
@@ -174,12 +173,14 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
+
   }
 
   /* section style */
   .section{
     padding-top: 100px;
     padding-bottom: 100px;
+    text-align: center;
   }
   .section__wrap{
     display:flex;
@@ -197,7 +198,7 @@
     border: 1.5px solid var(--Kulrang-Stroka, #434343);
     border-radius: 4px;
     padding: 20px;
-    width: 490px;
+    width: 47%;
     height: 350px;
     text-align: start;
   }
@@ -209,7 +210,7 @@
     align-items: start;
     justify-content: space-between;
     padding-top: 15px;
-    
+   padding-left: 0;
   }
   .section__item{
     max-width: 150px;
@@ -246,7 +247,8 @@
 
   /* wrapper style */
   .wrapper{
-    padding-top: 650px;
+    padding-top:120px;
+    text-align: center;
   }
   .wrapper__link{
     background: linear-gradient(114.23deg, #61B895 -62.2%, #149ED5 29.07%, #FF1CF7 111.62%);
@@ -314,6 +316,7 @@
   /* slider style */
   .slider{
     padding-top: 100px;
+    text-align: center;
   }
   .slider__name{
     color: white;
@@ -333,6 +336,7 @@
   /* cards style */
   .cards{
     padding-top: 100px;
+    text-align: center;
   }
   .cards__list{
     display: flex;
@@ -380,6 +384,7 @@
   .question{
     padding-top: 100px;
     padding-bottom: 100px;
+    text-align: center;
   }
   .question__item{
     width: 47%;
@@ -395,6 +400,7 @@
     flex-wrap: wrap;
     padding-top: 40px;;
     padding-bottom: 30px;
+    list-style: none;
   }
   .question__text{
     background-color: #15182F;
