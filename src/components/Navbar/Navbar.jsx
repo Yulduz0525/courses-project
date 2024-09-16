@@ -84,7 +84,9 @@ const Navbar = () => {
                 <div className='mobileMenu'>
                     <div className='text-white d-flex justify-content-end px-5 pt-3 closeMenuX' onClick={toggleMenu}><p className='close px-2'>X</p></div>
                     <div className='d-flex align-items-center internal_mobileMenu px-5 justify-content-between'>
+                        <Link to={'/'}>
                         <img src={Logo} alt='logo'/>
+                        </Link>
                         <Language/>
                     </div>
                     <ul className='d-flex flex-column align-items-center gap-3 list-unstyled'>
