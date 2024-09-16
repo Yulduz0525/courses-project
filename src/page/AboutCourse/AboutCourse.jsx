@@ -20,7 +20,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import '../../components/PriceModal/Modal'
 import { t } from 'i18next'
 import logo from '../../assets/logo.png'
-
+import ChatSvg from '../../icons/ChatSvg'
 const AboutCourse = () => {
   const backgroundStyle = {
     backgroundImage: `url(${backg})`,
@@ -844,9 +844,14 @@ const AboutCourse = () => {
         </a>
       </div>
       </div>
-      <div className='bottom'>
+      <div className='chatBtnWrapper'>
+                <button className='Chat'>
+                    <ChatSvg />
+                </button>
+            </div>
+      {/* <div className='bottom'>
       <i class="fa-solid fa-comment-dots"></i>
-      </div>
+      </div> */}
 
       </div>
       
