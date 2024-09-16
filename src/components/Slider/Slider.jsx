@@ -8,7 +8,7 @@ import Bilgi from "../../assets/bilgi.png"
 const Slider = () => {
   return (
     <div className="slider py-5">
-      <div className="slider-track">
+      <div className="slider-track">  
         <div className="slide"><img src={Uzum}/></div>
         <div className="slide"><img src={ITPark}/></div>
         <div className="slide"><img src={Click}/></div>
