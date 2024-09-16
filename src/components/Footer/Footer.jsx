@@ -5,8 +5,10 @@ import FacebookSvg from '../../icons/FacebookSvg'
 import YtSvg from '../../icons/YtSvg'
 import InstagrammSvg from '../../icons/InstagrammSvg'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+    const {t} = useTranslation()
     const scrollToSection = (id) => {
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
       };
@@ -27,34 +29,34 @@ const Footer = () => {
                     <div>
                         <ul className='list-unstyled'>
                             <li className='fw-bold fs-5 footer-ul-title'>
-                                Kurslarimiz
+                                {t('footer.text1')}
                             </li>
-                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>3d max</li>
-                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>UX UI dizayn</li>
-                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>Front-end</li>
-                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>Back-end</li>
-                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>Kompyuter savodxonligi</li>
-                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>Scratch o’yin dasturlash</li>
+                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>{t('footer.text2')}</li>
+                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>{t('footer.text3')}</li>
+                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>{t('footer.text4')}</li>
+                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>{t('footer.text5')}</li>
+                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>{t('footer.text6')}</li>
+                            <li className='footer-ul-text' onClick={() => scrollToSection("coursesInDirections")}>{t('footer.text7')}</li>
                         </ul>
                     </div>
                     <div>
                         <ul className='list-unstyled'>
-                            <li className='fs-5 fw-bold footer-ul-title'>Bo’limlar</li>
+                            <li className='fs-5 fw-bold footer-ul-title'>{t('footer.text8')}</li>
                             <li className='footer-ul-text'>
                                 <Link to='/aboutCours' className='text-decoration-none footer-ul-text'>
-                                Kurs haqida
+                                {t('footer.text9')}
                                 </Link>
                             </li>
-                            <li className='footer-ul-text' onClick={() => scrollToSection("comments")}>O’quvchilar fikri</li>
-                            <li className='footer-ul-text' onClick={() => scrollToSection("aboutUs")}>Biz haqimizda</li>
-                            <li className='footer-ul-text' onClick={() => scrollToSection("contacts")}>Kontakt</li>
+                            <li className='footer-ul-text' onClick={() => scrollToSection("comments")}>{t('footer.text10')}</li>
+                            <li className='footer-ul-text' onClick={() => scrollToSection("aboutUs")}>{t('footer.text11')}</li>
+                            <li className='footer-ul-text' onClick={() => scrollToSection("contacts")}>{t('footer.text12')}</li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className='fw-bold fs-5 footer-ul-title'>Biz haqimizda qisqacha</h4>
-                        <p className='footer-p-title'>NetPro-dasturlashga ilk qadam shu <br /> yerdan boshlanadi! <br /> </p>
-                        <h4 className='fw-bold fs-5 footer-ul-title'>Manzil:</h4>
-                        <p className='footer-p-title'>Toshkent, Chilonzor, Bunyodkor Shoh ko’chasi</p>
+                        <h4 className='fw-bold fs-5 footer-ul-title'>{t('footer.text13')}</h4>
+                        <p className='footer-p-title'>{t('footer.text14')}</p>
+                        <h4 className='fw-bold fs-5 footer-ul-title'>{t('footer.text15')}</h4>
+                        <p className='footer-p-title'>{t('footer.text16')}</p>
                         <div className='d-flex gap-2 py-2'>
                             <PhoneSvg />
                             <p className='footer-phone font-semibold'>+998 (33)-001-20-00</p>

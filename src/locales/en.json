@@ -1,15 +1,15 @@
 {
-    "nav": {
+  "nav": {
     "link1": "About the Course",
     "link2": "About Us",
     "link3": "Student Feedback",
     "link4": "Contact"
-},
-    "header": {
+  },
+  "header": {
     "title": "Build the future with NetPro IT School",
     "btn1": "Enroll in the course",
     "btn2": "Watch the course video",
-     "mainTitle": "Professional Development Training Courses",
+    "mainTitle": "Professional Development Training Courses",
     "additionalText": "By enrolling in our IT professional training courses, you will have the opportunity to receive industry-recognized certificates that can enhance your career prospects."
   },
   "advantages": {
@@ -32,20 +32,26 @@
     "title3": "Courses by Specialization",
     "text2": "Learn one of the modern fields and become a sought-after professional!",
     "frontend": "Frontend",
-    "design": "UX / UI Design",
+    "dizayn": "UX / UI Design",
     "3dmax": "3D Max",
     "backend": "Backend",
-    "computerLiteracy": "Computer Literacy",
+    "kpSavodxonligi": "Computer Literacy",
     "scratch": "Scratch",
-    "detailedBtn": "Details",
-    "coursesBtn": "Upcoming Courses"
-},
-"aboutUs": {
+    "batafsilBtn": "Details",
+    "coursesBtn": "Upcoming Courses",
+    "frontendText": "In the frontend course, you will dive into the intricacies of web development, focusing on the elements that users directly see and interact with. This includes creating engaging and responsive user interfaces.",
+    "dizaynText": "Gain a deep understanding of principles, processes, and practical skills. Whether you're interested in creating mobile applications, websites, or interfaces, this course equips you with the knowledge and tools needed to succeed in the field of UX/UI design.",
+    "3dmaxText": "Your gateway to the captivating world of 3D modeling, animation, and visualization. Throughout the course, you'll explore the powerful features of 3D Max and learn to create stunning visualizations and lifelike animations.",
+    "backendText": "Welcome to backend development software! In this module, you will delve into the world of server-side programming and learn to build the backbone of web applications and systems.",
+    "kpSavodxonligiText": "Welcome to the exciting world of computer science! In this course, you will learn the fundamentals of computing, algorithms, and problem-solving techniques that form the basis of modern technology.",
+    "scratchText": "This course is designed for beginners to learn the basics of visual programming using the Scratch programming language, and bring your ideas to life through concepts like sprites, costumes, and events."
+  },
+  "aboutUs": {
     "title": "About Us",
     "title2": "Who Are We?",
     "text": "NetPro IT School has been operating since 2020. At our center, you have the opportunity to learn computer literacy, Front-end, Back-end, SMM, Scratch, and English. Our training center provides all the necessary conditions for studying in these fields, and our offices are equipped with computer equipment. Our instructors are qualified professionals in their fields and will provide all the necessary guidance for proper education. Our classes are primarily focused on practical work, with 20% theoretical and 80% practical content."
-},
-"netPro": {
+  },
+  "netPro": {
     "title": "Why NetPro?",
     "title01": "Quality Education",
     "title02": "Regular Competitions",
@@ -65,20 +71,25 @@
     "text07": "A journey that paves the way to your income in 2 months.",
     "text08": "Mentors with 3 years of experience guiding ambitious individuals.",
     "text09": "Building a gallery of your best work in your resume and portfolio."
-},
-"certificate": {
+  },
+  "sertificate": {
     "title": "Specialized Training Certificate"
-},
-"comments": {
+  },
+  "comments": {
     "title": "Student Feedback",
     "cardText": "Hello. I completed the Front-End course at ‘NetPro’ training center. I am currently studying the Back-End course. The courses are very well organized. The instructors are experienced, and the ‘NetPro’ team is welcoming."
-},
-"contact": {
+  },
+  "commentsCard": {
+    "name": "Nodir Ahmadjonov",
+    "job": "Front-end Developer",
+    "text": "Hello. I completed the Front-End course at the 'NetPro' training center. Currently, I am studying in the Back-End course. The courses are very well organized. The teachers are experienced, and the 'NetPro' team is very polite."
+  },
+  "contact": {
     "title": "Contact Us",
     "title2": "Contacts",
     "text": "Bunyodkor Shah Street"
-},
-"footer": {
+  },
+  "footer": {
     "text1": "Our Courses",
     "text2": "3D Max",
     "text3": "UX UI Design",
@@ -95,7 +106,16 @@
     "text14": "NetPro—Your first step in programming starts here!",
     "text15": "Address:",
     "text16": "Tashkent, Chilonzor, Bunyodkor Shah Street"
-},
+  },
+  "mainModal": {
+    "title": "Registration",
+    "text": "The confirmation code will be sent to the provided number via a free SMS",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone number",
+    "inputName": "Enter your name..",
+    "inputEmail": "Enter your email.."
+  },
   "course": {
     "title": "Courses by directions",
     "name1": "Frontend Development",
