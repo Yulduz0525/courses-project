@@ -7,6 +7,11 @@
     text-decoration: none;
     list-style: none;;
   }
+  .btn{
+    width: 200px;
+    padding: 10px 15px;
+
+  }
   .header__wrap{
     display: flex;
     align-items: center;
@@ -133,8 +138,11 @@
     border: 1.5px solid var(--Kulrang-Stroka, #434343);
     border-radius: 4px;
     padding: 25px;
-    
-
+  }
+  .swiper__card:hover{
+    border-width: 1.5px;
+    border-style: solid;
+    border-image: linear-gradient(114.23deg, #61B895 -62.2%, #149ED5 29.07%, #FF1CF7 111.62%) 1;
   }
   .swiper__title,.section__name,.wrapper__name,.wrapper__name_sub,.cards__name{
     color: #FCFCFC;
@@ -155,6 +163,7 @@
   }
   .swiper__btn{
     color: white;
+    background-color: #15182F;
     padding: 10px 15px;
     font-size: 16px;
     gap: 4px;
@@ -203,7 +212,9 @@
     text-align: start;
   }
   .section__box:hover{
-    background: #202449;
+      border-width: 1.5px;
+      border-style: solid;
+      border-image: linear-gradient(114.23deg, #61B895 -62.2%, #149ED5 29.07%, #FF1CF7 111.62%) 1;
   }
   .section__list{
     display: flex;
@@ -278,6 +289,11 @@
     padding: 20px;
     text-align: start;
     width: 46%;
+  }
+  .wrapper__item:hover{
+    border-width: 1.5px;
+    border-style: solid;
+    border-image: linear-gradient(114.23deg, #61B895 -62.2%, #149ED5 29.07%, #FF1CF7 111.62%) 1;
   }
   .wrapper__line{
     display: flex;
@@ -355,7 +371,9 @@
     margin-bottom: 25px;
   }
   .cards__item:hover{
-    background-color: #1d2142;
+    border-width: 1.5px;
+    border-style: solid;
+    border-image: linear-gradient(114.23deg, #61B895 -62.2%, #149ED5 29.07%, #FF1CF7 111.62%) 1;
   }
   .cards__top{
     display: flex;
@@ -428,6 +446,18 @@
     margin-left: auto;
     
   }
+  .modal__btn{
+    margin: 0 auto;
+  }
+  .modal__form{
+    width: 100%;
+    margin: 0 auto;
+  }
+  input{
+    outline: none;
+  }
+  
+  
  
  
   

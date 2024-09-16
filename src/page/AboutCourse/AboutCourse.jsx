@@ -17,7 +17,9 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import '../../components/PriceModal/Modal'
 import { t } from 'i18next'
+import logo from '../../assets/logo.png'
 
 const AboutCourse = () => {
   const backgroundStyle = {
@@ -40,10 +42,10 @@ const AboutCourse = () => {
         Kursga yozilish
           <i class="fa-solid fa-arrow-right"></i>
         </a>
-        <div className='header__wrap_link'>
+        <div className='d-flex align-items-center bg-transparent border-0 videoBtn'>
           <img src={vidicon} alt="video-icon" />
-          <a className='header__link_right' href="#"> 
-          {t('header.btn2')}
+         <a className='btnText' href="#"> 
+          Kurs haqida video
             </a>
         </div>
       </div>
@@ -233,7 +235,7 @@ const AboutCourse = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <button className='swiper__btn'>
+      <button class='swiper__btn' type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
         Karta orqali to'lov
         <i class="fa-solid fa-arrow-right"></i>
       </button>
@@ -434,10 +436,12 @@ const AboutCourse = () => {
             </p>
             </li>
           </ul>
-          <a className='header__link text-white py-5 px-7' href="#">
+          <div className='btn'>
+          <a className='mainBtn text-white rounded-md d-flex align-items-center border-0 text-decoration-none' href="#">
           Kursga yozilish
           <i class="fa-solid fa-arrow-right"></i>
         </a>
+          </div>
           </div>
     </div>
 
@@ -483,10 +487,12 @@ const AboutCourse = () => {
        </div>
        <div className='right'>
         <h3 className='wrapper__name_sub'>Bir marta to’lov qilib butun kursni sotib olish uchun quyidagi tugmani bosing!</h3>
-        <a className='header__link text-white py-5 px-7' href="#">
+       <div className='btn'>
+       <a className='mainBtn text-white rounded-md d-flex align-items-center border-0 text-decoration-none' href="#">
           Kursga yozilish
           <i class="fa-solid fa-arrow-right"></i>
         </a>
+       </div>
        </div>
       </div>
       <div id='courses-video'>
@@ -830,10 +836,12 @@ const AboutCourse = () => {
         </li>
       </ul>
       <div className='question__btn'>
-      <a className='header__link text-white py-5 px-7' href="#">
+      <div className='btn'>
+      <a className='mainBtn text-white rounded-md d-flex align-items-center border-0 text-decoration-none' href="#">
           Kursga yozilish
           <i class="fa-solid fa-arrow-right"></i>
         </a>
+      </div>
       </div>
       <div className='bottom'>
       <i class="fa-solid fa-comment-dots"></i>
@@ -843,6 +851,39 @@ const AboutCourse = () => {
       
 
     </div>
+{/* Modal price */}
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img className='logo' src={logo} alt="logo" />
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style={{textAlign:"center"}}>
+        <form className='modal__form' action="modal__form" >
+          <label>ID raqami</label><br />
+          <input type="text" placeholder='000/000' /><br />
+          <label>To'lov miqdori</label><br />
+          <input type="text"placeholder='10 000' />
+        </form>
+
+        
+      </div>
+      <div class="modal-footer">
+      <div className='modal__btn'>
+      <a className='mainBtn text-white rounded-md d-flex align-items-center border-0 text-decoration-none' href="#">
+        To'lov uchun
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
