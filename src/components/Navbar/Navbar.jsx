@@ -5,9 +5,14 @@ import Language from '../../components/Language/Language'
 import MenuBarSvg from '../../icons/MenuBarSvg'
 import ArrowSvg from '../../icons/ArrowSvg'
 import { useTranslation } from 'react-i18next'
+import MainModal from '../MainModal/MainModal'
 const Navbar = () => {
+    const [showMainModal,setShowMainModal] = useState(false)
     const [showMenu,setShowMenu] = useState(false)
     const [scrolled, setScrolled] = useState(false)
+    const showModal = () =>{
+        setShowMainModal(!showMainModal)
+    }
     const { t } = useTranslation();
     const scrollToSection = (id) => {
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
@@ -32,15 +37,15 @@ const Navbar = () => {
             path: "aboutCours"
         },
         {
-            linkName: "Biz haqimizda",
+            linkName: t('nav.link2'),
             id: "aboutUs"
         },
         {
-            linkName: "O’quvchilar fikri",
+            linkName: t('nav.link3'),
             id: "comments"
         },
         {
-            linkName: "Kontakt",
+            linkName: t('nav.link4'),
             id: "contacts"
         },
     ]
@@ -92,11 +97,16 @@ const Navbar = () => {
                                 }
                     </ul>
                     <div className='d-flex justify-content-center'>
-                    <button className='mainBtn text-white rounded-md d-flex align-items-center border-0'>Kursga yozilish <ArrowSvg /></button>
+                    <button onClick={showModal} className='mainBtn text-white rounded-md d-flex align-items-center border-0'>{t('header.btn1')} <ArrowSvg /></button>
                     </div>
                 </div>
             
             </div>
+            {
+                showMainModal && <div className='mainModalWrapper'>
+                    <MainModal setShowMainModal={setShowMainModal} showMainModal={showMainModal} />
+                </div>
+            }
         </div>
     )
 }

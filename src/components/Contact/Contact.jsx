@@ -3,21 +3,23 @@ import ContactImg1Svg from '../../icons/ContactImg1Svg'
 import ContactImg2Svg from '../../icons/ContactImg2Svg'
 import ArrowSvg from '../../icons/ArrowSvg'
 import MainModal from '../MainModal/MainModal'
+import { useTranslation } from 'react-i18next'
 const Contact = () => {
     const [showMainModal,setShowMainModal] = useState(false)
+    const {t} = useTranslation()
     const showModal = () =>{
         setShowMainModal(!showMainModal)
     }
     return (
         <div id='contacts' className='container py-5'>
-            <h1  className='ad_title fw-bold pb-4'>Biz bilan bog’laning</h1>
+            <h1  className='ad_title fw-bold pb-4'>{t('contact.title')}</h1>
             <div  className='contact-wrapper d-flex justify-content-between align-items-center py-4'>
                 <div>
-                    <h3 className='text-white fs-4 fw-bolder contact-title'>Kontaktlar</h3>
+                    <h3 className='text-white fs-4 fw-bolder contact-title'>{t('contact.title2')}</h3>
                     <div className='contact-btn'>
                         <div className='contact_text d-flex gap-2 align-items-center py-3'>
                             <ContactImg1Svg />
-                            <p className='text-white fw-semibold'>Bunyodkor shoh ko’chasi</p>
+                            <p className='text-white fw-semibold'>{t('contact.text')}</p>
                         </div>
                         <div className='contact_location d-flex gap-2 align-items-center'>
                             <ContactImg2Svg />
@@ -25,7 +27,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='contactBtnWrapper'>
-                        <button onClick={showModal} className='mainBtn text-white rounded-md d-flex align-items-center border-0 mt-4'>Kursga yozilish <ArrowSvg /></button>
+                        <button onClick={showModal} className='mainBtn text-white rounded-md d-flex align-items-center border-0 mt-4'>{t('header.btn1')} <ArrowSvg /></button>
                     </div>
                 </div>
                 <div className='contact_location'>

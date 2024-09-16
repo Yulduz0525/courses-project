@@ -10,11 +10,11 @@
         "btn1":"Kursga yozilish",
         "btn2":"Kurs haqida video",
         "mainTitle":"Kasbiy rivojlanish uchun o’quv kurslar",
-        "aditionalText":"Bizning it-kasbiy tayyorgarlik kursimizga yozilish orqali siz martaba istiqbollarini oshirishi mumkin bo'lgan sanoat tomonidan tan olingan sertifikatlarni olish imkoniyatiga ega bo'lasiz."
+        "additionalText":"Bizning it-kasbiy tayyorgarlik kursimizga yozilish orqali siz martaba istiqbollarini oshirishi mumkin bo'lgan sanoat tomonidan tan olingan sertifikatlarni olish imkoniyatiga ega bo'lasiz."
     },
     "advantages":{
         "title":"Afzalliklarimiz",
-        "aditionalText":"Biz hozirda o'zizmizning oldimizga qo'ygan maqsadlarimiz sari yo'l olmoqdamiz qani sizham bizga qo'shiling!",
+        "additionalText":"Biz hozirda o'zizmizning oldimizga qo'ygan maqsadlarimiz sari yo'l olmoqdamiz qani sizham bizga qo'shiling!",
         "card1Title":"O’z ishining ustalari",
         "card2Title":"Shunchaki kurs emas",
         "card3Title":"Interaktiv darslar",
@@ -38,7 +38,13 @@
         "kpSavodxonligi":"Kompyuter savodxonligi",
         "scratch":"Scratch",
         "batafsilBtn":"Batafsil",
-        "coursesBtn":"Kutilayotgan kurslar"
+        "coursesBtn":"Kutilayotgan kurslar",
+        "frontendText":"Frontend kursida siz foydalanuvchilar to'g'ridan-to'g'ri ko'rgan va o'zaro aloqada bo'lgan narsalarga e'tibor qaratib, veb-ishlab chiqishning nozik tomonlariga sho'ng'iysiz. Bunga qiziqarli va sezgir foydalanuvchi interfeyslarini yaratish.",
+        "dizaynText":"Printsiplar, jarayonlar va amaliy ko'nikmalarni chuqur tushunish. Mobil ilovalar, veb-saytlarni jalb qilish yoki interfeyslarni yaratishga qiziqasizmi, UX / UI dizayn sohasida muvaffaqiyat qozonish uchun zarur bo'lgan bilim va vositalar bilan ta'minlaydi.",
+        "3dmaxText":"3D modellashtirish, animatsiya va vizualizatsiyaning jozibali sohasiga kirish eshigingiz. Kurs davomida siz 3D Max-ning kuchli xususiyatlariga sho'ng'ib, ajoyib vizualizatsiya va hayotiy animatsiyalarni yaratishni o'rganish.",
+        "backendText":"Backend rivojlantirish dasturiy taminotga  xush kelibsiz! Ushbu modulda siz server tomonidagi dasturlash dunyosiga kirib borasiz va veb-ilovalar va tizimlarning asosini yaratishni o'rganasiz.",
+        "kpSavodxonligiText":"Kompyuter fanining qiziqarli dunyosiga xush kelibsiz! Ushbu kursda siz zamonaviy texnologiyalarning asosini tashkil etuvchi hisoblash asoslari, algoritmlar va muammolarni hal qilish usullarini o'rganasiz.",
+        "scratchText":"Ushbu kurs yangi boshlanuvchilar uchun mo'ljallangan dasturlash tili Scratch yordamida vizual dasturlash asoslari va g’oyalaringizni hayotga tatbiq etish uchun spritlar, kostyumlar va tadbirlar kabi tushunchalarni o'rganing."
     },
     "aboutUs":{
         "title":"Biz haqimizda",
@@ -73,6 +79,11 @@
         "title":"O’quvchilarning fikrlari",
         "cardText":"Assalomu alaykum. «NetPro» o'quv markazida Front-End kursini tamomladim. Va hozirda Back-End kursida oʻqiyapman. Kurslar juda zoʻr tashkillashtirilgan. Ustozlar tajribali va «NetPro» jamoasi xushmuomilalik."
     },
+    "commentsCard":{
+        "name":"Nodir Ahmadjonov",
+        "job":"Frond-and dasturchi",
+        "text":"Assalomu alaykum. «NetPro» o'quv markazida Front-End kursini tamomladim. Va hozirda Back-End kursida oʻqiyapman. Kurslar juda zoʻr tashkillashtirilgan. Ustozlar tajribali va «NetPro» jamoasi xushmuomilalik."
+    },
     "contact":{
         "title":"Biz bilan bog’laning",
         "title2":"Kontaktlar",
@@ -95,6 +106,15 @@
         "text14":"NetPro-dasturlashga ilk qadam shu yerdan boshlanadi!",
         "text15":"Manzil:",
         "text16":"Toshkent, Chilonzor, Bunyodkor Shoh ko’chasi"
+    },
+    "mainModal":{
+        "title":"Ro’yxatdan o’tish",
+        "text":"Tasdiqlash kodi ko’rsatilgan raqamga bepul SMS orqali yuboriladi",
+        "name":"Ism",
+        "email":"Email",
+        "phone":"Telefon raqam",
+        "inputName":"Ismingizni kiriting..",
+        "inputEmail":"Emailingizni kiriting.."
     },
     "course":{
         "title":"Yo'nalishlar bo'yicha kurslar",

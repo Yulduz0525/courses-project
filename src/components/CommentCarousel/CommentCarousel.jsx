@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Avatar from "../../assets/avatar.png"
 import Quotes from "../../assets/quotes.png"
 import StarSvg from '../../icons/StarSvg';
+import { t } from 'i18next';
 const CommentCarousel = () => {
   const settings = {
     dots: true, // Slide indicatorlar ko'rsatish
@@ -35,106 +36,107 @@ const CommentCarousel = () => {
     <div className="carousel-container">
       <Slider {...settings}>
         <div className='carousel-slide'>
-            <div className='p-4 slick-carousel-item'>
-          <div className='d-flex align-items-start gap-3'>
-            <img src={Avatar} alt='Avatar'/>
-            <div className=''>
-                <p className='ad_card_title p-0'>Nodir Ahmadjonov</p>
-                <p className='ad_card_text'>Frond-and dasturchi</p>
+          <div className='p-4 slick-carousel-item'>
+            <div className='d-flex align-items-start gap-3'>
+              <img src={Avatar} alt='Avatar' />
+              <div className=''>
+                <p className='ad_card_title p-0'>{t('commentsCard.name')}</p>
+                <p className='ad_card_text'>{t('commentsCard.job')}</p>
+              </div>
+              <img src={Quotes} alt='quotes' />
             </div>
-            <img src={Quotes} alt='quotes'/>
-          </div>
-          <p className='ad_card_text py-3'>Assalomu alaykum. «NetPro» o'quv markazida Front-End kursini tamomladim. Va hozirda Back-End kursida oʻqiyapman. Kurslar juda zoʻr tashkillashtirilgan. Ustozlar tajribali va «NetPro» jamoasi xushmuomilalik.</p>
-          <div className='d-flex justify-content-between align-items-center'>
-            <div className='d-flex align-items-center gap-1'>
-                <StarSvg/>
+            <p className='ad_card_text py-3'>{t('commentsCard.text')}</p>
+            <div className='d-flex justify-content-between align-items-center'>
+              <div className='d-flex align-items-center gap-1'>
+                <StarSvg />
                 <p className='text-white'>(4.8)</p>
+              </div>
+              <p className='text-white'>04 Oct 2024</p>
             </div>
-            <p className='text-white'>04 Oct 2024</p>
           </div>
-        </div>
         </div>
         <div className='carousel-slide'>
-            <div className='p-4 slick-carousel-item'>
-          <div className='d-flex align-items-start gap-3'>
-            <img src={Avatar} alt='Avatar'/>
-            <div className=''>
-                <p className='ad_card_title p-0'>Nodir Ahmadjonov</p>
-                <p className='ad_card_text'>Frond-and dasturchi</p>
+          <div className='p-4 slick-carousel-item'>
+            <div className='d-flex align-items-start gap-3'>
+              <img src={Avatar} alt='Avatar' />
+              <div className=''>
+                <p className='ad_card_title p-0'>{t('commentsCard.name')}</p>
+                <p className='ad_card_text'>{t('commentsCard.job')}</p>
+              </div>
+              <img src={Quotes} alt='quotes' />
             </div>
-            <img src={Quotes} alt='quotes'/>
-          </div>
-          <p className='ad_card_text py-3'>Assalomu alaykum. «NetPro» o'quv markazida Front-End kursini tamomladim. Va hozirda Back-End kursida oʻqiyapman. Kurslar juda zoʻr tashkillashtirilgan. Ustozlar tajribali va «NetPro» jamoasi xushmuomilalik.</p>
-          <div className='d-flex justify-content-between align-items-center'>
-            <div className='d-flex align-items-center gap-1'>
-                <StarSvg/>
+            <p className='ad_card_text py-3'>{t('commentsCard.text')}</p>
+            <div className='d-flex justify-content-between align-items-center'>
+              <div className='d-flex align-items-center gap-1'>
+                <StarSvg />
                 <p className='text-white'>(4.8)</p>
+              </div>
+              <p className='text-white'>04 Oct 2024</p>
             </div>
-            <p className='text-white'>04 Oct 2024</p>
           </div>
-        </div>
         </div>
         <div className='carousel-slide'>
-            <div className='p-4 slick-carousel-item'>
-          <div className='d-flex align-items-start gap-3'>
-            <img src={Avatar} alt='Avatar'/>
-            <div className=''>
-                <p className='ad_card_title p-0'>Nodir Ahmadjonov</p>
-                <p className='ad_card_text'>Frond-and dasturchi</p>
+          <div className='p-4 slick-carousel-item'>
+            <div className='d-flex align-items-start gap-3'>
+              <img src={Avatar} alt='Avatar' />
+              <div className=''>
+                <p className='ad_card_title p-0'>{t('commentsCard.name')}</p>
+                <p className='ad_card_text'>{t('commentsCard.job')}</p>
+              </div>
+              <img src={Quotes} alt='quotes' />
             </div>
-            <img src={Quotes} alt='quotes'/>
-          </div>
-          <p className='ad_card_text py-3'>Assalomu alaykum. «NetPro» o'quv markazida Front-End kursini tamomladim. Va hozirda Back-End kursida oʻqiyapman. Kurslar juda zoʻr tashkillashtirilgan. Ustozlar tajribali va «NetPro» jamoasi xushmuomilalik.</p>
-          <div className='d-flex justify-content-between align-items-center'>
-            <div className='d-flex align-items-center gap-1'>
-                <StarSvg/>
+            <p className='ad_card_text py-3'>{t('commentsCard.text')}</p>
+            <div className='d-flex justify-content-between align-items-center'>
+              <div className='d-flex align-items-center gap-1'>
+                <StarSvg />
                 <p className='text-white'>(4.8)</p>
+              </div>
+              <p className='text-white'>04 Oct 2024</p>
             </div>
-            <p className='text-white'>04 Oct 2024</p>
           </div>
-        </div>
         </div>
         <div className='carousel-slide'>
-            <div className='p-4 slick-carousel-item'>
-          <div className='d-flex align-items-start gap-3'>
-            <img src={Avatar} alt='Avatar'/>
-            <div className=''>
-                <p className='ad_card_title p-0'>Nodir Ahmadjonov</p>
-                <p className='ad_card_text'>Frond-and dasturchi</p>
+          <div className='p-4 slick-carousel-item'>
+            <div className='d-flex align-items-start gap-3'>
+              <img src={Avatar} alt='Avatar' />
+              <div className=''>
+                <p className='ad_card_title p-0'>{t('commentsCard.name')}</p>
+                <p className='ad_card_text'>{t('commentsCard.job')}</p>
+              </div>
+              <img src={Quotes} alt='quotes' />
             </div>
-            <img src={Quotes} alt='quotes'/>
-          </div>
-          <p className='ad_card_text py-3'>Assalomu alaykum. «NetPro» o'quv markazida Front-End kursini tamomladim. Va hozirda Back-End kursida oʻqiyapman. Kurslar juda zoʻr tashkillashtirilgan. Ustozlar tajribali va «NetPro» jamoasi xushmuomilalik.</p>
-          <div className='d-flex justify-content-between align-items-center'>
-            <div className='d-flex align-items-center gap-1'>
-                <StarSvg/>
+            <p className='ad_card_text py-3'>{t('commentsCard.text')}</p>
+            <div className='d-flex justify-content-between align-items-center'>
+              <div className='d-flex align-items-center gap-1'>
+                <StarSvg />
                 <p className='text-white'>(4.8)</p>
+              </div>
+              <p className='text-white'>04 Oct 2024</p>
             </div>
-            <p className='text-white'>04 Oct 2024</p>
           </div>
-        </div>
         </div>
         <div className='carousel-slide'>
-            <div className='p-4 slick-carousel-item'>
-          <div className='d-flex align-items-start gap-3'>
-            <img src={Avatar} alt='Avatar'/>
-            <div className=''>
-                <p className='ad_card_title p-0'>Nodir Ahmadjonov</p>
-                <p className='ad_card_text'>Frond-and dasturchi</p>
+          <div className='p-4 slick-carousel-item'>
+            <div className='d-flex align-items-start gap-3'>
+              <img src={Avatar} alt='Avatar' />
+              <div className=''>
+                <p className='ad_card_title p-0'>{t('commentsCard.name')}</p>
+                <p className='ad_card_text'>{t('commentsCard.job')}</p>
+              </div>
+              <img src={Quotes} alt='quotes' />
             </div>
-            <img src={Quotes} alt='quotes'/>
-          </div>
-          <p className='ad_card_text py-3'>Assalomu alaykum. «NetPro» o'quv markazida Front-End kursini tamomladim. Va hozirda Back-End kursida oʻqiyapman. Kurslar juda zoʻr tashkillashtirilgan. Ustozlar tajribali va «NetPro» jamoasi xushmuomilalik.</p>
-          <div className='d-flex justify-content-between align-items-center'>
-            <div className='d-flex align-items-center gap-1'>
-                <StarSvg/>
+            <p className='ad_card_text py-3'>{t('commentsCard.text')}</p>
+            <div className='d-flex justify-content-between align-items-center'>
+              <div className='d-flex align-items-center gap-1'>
+                <StarSvg />
                 <p className='text-white'>(4.8)</p>
+              </div>
+              <p className='text-white'>04 Oct 2024</p>
             </div>
-            <p className='text-white'>04 Oct 2024</p>
           </div>
         </div>
-        </div>
-       
+        
+
       </Slider>
     </div>
   );
