@@ -444,7 +444,13 @@
     border-radius: 4px;
     text-align: center;
     padding-top: 7px;
+    padding-left: 10PX;
+    padding-right: 10PX;
     margin-left: auto;
+    position: fixed;
+    z-index: 5;
+    bottom: 100px;
+    right: 150PX;
     
   }
   .modal__btn{
@@ -486,6 +492,9 @@
   .section__wrap{
     width: 100%;
     
+  }
+  .bottom{
+    right: 100px;
   }
 }
 
@@ -550,6 +559,10 @@
    .kovorking__container{
     width: 100%;
   }
+  .bottom{
+    right: 70px;
+    bottom:80px;
+  }
    
     iframe{
       height: 400px;
@@ -612,7 +625,7 @@
     height: 260px;
    }
     .right{
-      top: 420px;
+      top: 470px;
     }
     .cards__item{
       width: 100%;
@@ -630,5 +643,20 @@
     .header{
       background-image: transparent;;
     }
+    .wrapper{
+      padding-top: 200px;
+    }
+    .wrapper__line{
+      flex-direction: column;
+    }
+    .cards__item{
+      height: auto;
+    }
+    .bottom{
+      right: 40px;
+      bottom:70px;
+      background: transparent;;
+    }
+   
     
   }
