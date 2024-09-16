@@ -394,7 +394,19 @@ p {
   text-align: center;
   font-size: 36px;
 }
-
+@media(max-width:450px){
+  .ad_title{
+    font-size: 28px;
+  }
+  .ad_card_title{
+    font-size: 15px;
+  }
+}
+@media(max-width:370px){
+  .ad_title{
+    font-size: 26px;
+  }
+}
 .ad_text {
   color: #A8A9AD;
   text-align: center;

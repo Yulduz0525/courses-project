@@ -32,6 +32,7 @@ const AboutCourse = () => {
   
   return (
     <>
+ 
    {/* Header */}
     <div className='header text-center'style={backgroundStyle}>
      <div className='container header__container'>
@@ -39,13 +40,13 @@ const AboutCourse = () => {
         {t('header.title')}</h1>
       <div className='header__wrap flex my-0 mx-auto w-1/2'> 
         <a className='mainBtn text-white rounded-md d-flex align-items-center border-0 text-decoration-none' href="#">
-        Kursga yozilish
+        {t('header.btn1')}
           <i class="fa-solid fa-arrow-right"></i>
         </a>
         <div className='d-flex align-items-center bg-transparent border-0 videoBtn'>
           <img src={vidicon} alt="video-icon" />
          <a className='btnText' href="#"> 
-          Kurs haqida video
+         {t('header.btn2')}
             </a>
         </div>
       </div>
@@ -111,16 +112,16 @@ const AboutCourse = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <button className='swiper__btn'>
+      <button class='swiper__btn' type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
       {t('course.btn2')}
         <i class="fa-solid fa-arrow-right"></i>
       </button>
       <div className='swiper__wrapper'>
         <p className='swiper__text'>
-        {t('course.subtext1')}
+        {t('course.subtxt1')}
         </p>
         <p className='swiper__text'>
-        {t('course.subtext2')}
+        {t('course.subtxt2')}
         </p>
       </div>
           </div>
@@ -153,16 +154,16 @@ const AboutCourse = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <button className='swiper__btn'>
+      <button class='swiper__btn' type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
       {t('course.btn2')}
         <i class="fa-solid fa-arrow-right"></i>
       </button>
       <div className='swiper__wrapper'>
         <p className='swiper__text'>
-        {t('course.subtext1')}
+        {t('course.subtxt1')}
         </p>
         <p className='swiper__text'>
-        4 ta modul
+        {t('course.subtxt2')}
         </p>
       </div>
           </div>
@@ -171,58 +172,17 @@ const AboutCourse = () => {
         <div className='swiper__card'>
         <i class="fa-brands fa-codepen"></i>
           <h3 className='swiper__title'>
-            Frontend dasturlash
+          {t('course.name3')}
           </h3>
           <p className='swiper__text'>
-          Veb-sahifa va veb-ilovalarning foydalanuvchiga koʻrinadigan qismini hosil qilish sohasidir.
+          {t('course.text3')}
           </p>
           <Accordion style={{background: "#15182F",textAlign:"center"}}>
         <AccordionSummary
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'>Texnologiyalar</h2>
-          {<ArrowDropDownIcon />}
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>  
-          <Typography>
-            <div className='accardion__div'>
-              <p className='accardion__text'>Frontend React</p>
-              <p className='accardion__text'>Frontend NextJs</p>
-            </div>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <button className='swiper__btn'>
-        Karta orqali to'lov
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-      <div className='swiper__wrapper'>
-        <p className='swiper__text'>
-        6 oy davomiyligi
-        </p>
-        <p className='swiper__text'>
-        4 ta modul
-        </p>
-      </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='swiper__card'>
-          <i class="fa-solid fa-code"></i>
-          <h3 className='swiper__title'>
-            Frontend dasturlash
-          </h3>
-          <p className='swiper__text'>
-          Veb-sahifa va veb-ilovalarning foydalanuvchiga koʻrinadigan qismini hosil qilish sohasidir.
-          </p>
-          <Accordion style={{background: "#15182F",textAlign:"center"}}>
-        <AccordionSummary
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'>Texnologiyalar</h2>
+          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'> {t('course.btn1')}</h2>
           {<ArrowDropDownIcon />}
           </Typography>
         </AccordionSummary>
@@ -236,15 +196,56 @@ const AboutCourse = () => {
         </AccordionDetails>
       </Accordion>
       <button class='swiper__btn' type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Karta orqali to'lov
+      {t('course.btn2')}
         <i class="fa-solid fa-arrow-right"></i>
       </button>
       <div className='swiper__wrapper'>
         <p className='swiper__text'>
-        6 oy davomiyligi
+        {t('course.subtxt1')}
         </p>
         <p className='swiper__text'>
-        4 ta modul
+        {t('course.subtxt2')}
+        </p>
+      </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='swiper__card'>
+          <i class="fa-solid fa-code"></i>
+          <h3 className='swiper__title'>
+          {t('course.name1')}
+          </h3>
+          <p className='swiper__text'>
+          {t('course.text1')}
+          </p>
+          <Accordion style={{background: "#15182F",textAlign:"center"}}>
+        <AccordionSummary
+          aria-controls="panel1-content"
+          id="panel1-header"
+        >
+          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'> {t('course.btn1')}</h2>
+          {<ArrowDropDownIcon />}
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>  
+          <Typography>
+            <div className='accardion__div'>
+              <p className='accardion__text'>Frontend React</p>
+              <p className='accardion__text'>Frontend NextJs</p>
+            </div>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <button class='swiper__btn' type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+      {t('course.btn2')}
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <div className='swiper__wrapper'>
+        <p className='swiper__text'>
+        {t('course.subtxt1')}
+        </p>
+        <p className='swiper__text'>
+        {t('course.subtxt2')}
         </p>
       </div>
           </div>
@@ -253,17 +254,17 @@ const AboutCourse = () => {
         <div className='swiper__card'>
         <i class="fa-solid fa-code-compare"></i>
           <h3 className='swiper__title'>
-            Frontend dasturlash
+          {t('course.name2')}
           </h3>
           <p className='swiper__text'>
-          Veb-sahifa va veb-ilovalarning foydalanuvchiga koʻrinadigan qismini hosil qilish sohasidir.
+          {t('course.text2')}
           </p>
           <Accordion style={{background: "#15182F",textAlign:"center"}}>
         <AccordionSummary
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'>Texnologiyalar</h2>
+          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'> {t('course.btn1')}</h2>
           {<ArrowDropDownIcon />}
           </Typography>
         </AccordionSummary>
@@ -276,16 +277,16 @@ const AboutCourse = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <button className='swiper__btn'>
-        Karta orqali to'lov
+      <button class='swiper__btn' type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+      {t('course.btn2')}
         <i class="fa-solid fa-arrow-right"></i>
       </button>
       <div className='swiper__wrapper'>
         <p className='swiper__text'>
-        6 oy davomiyligi
+        {t('course.subtxt1')}
         </p>
         <p className='swiper__text'>
-        4 ta modul
+        {t('course.subtxt2')}
         </p>
       </div>
           </div>
@@ -294,17 +295,17 @@ const AboutCourse = () => {
         <div className='swiper__card'>
         <i class="fa-brands fa-codepen"></i>
           <h3 className='swiper__title'>
-            Frontend dasturlash
+          {t('course.name3')}
           </h3>
           <p className='swiper__text'>
-          Veb-sahifa va veb-ilovalarning foydalanuvchiga koʻrinadigan qismini hosil qilish sohasidir.
+          {t('course.text3')}
           </p>
           <Accordion style={{background: "#15182F",textAlign:"center"}}>
         <AccordionSummary
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'>Texnologiyalar</h2>
+          <Typography style={{border: "1px solid var(--Kulrang-Stroka, #434343)",radius:"4px",color:"white",display:"flex",padding:"10px 20px", opacity:"0.8",margin:"0 auto"}}><h2 className='accardion__title'> {t('course.btn1')}</h2>
           {<ArrowDropDownIcon />}
           </Typography>
         </AccordionSummary>
@@ -317,16 +318,16 @@ const AboutCourse = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <button className='swiper__btn'>
-        Karta orqali to'lov
+      <button class='swiper__btn' type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+      {t('course.btn2')}
         <i class="fa-solid fa-arrow-right"></i>
       </button>
       <div className='swiper__wrapper'>
         <p className='swiper__text'>
-        6 oy davomiyligi
+        {t('course.subtxt1')}
         </p>
         <p className='swiper__text'>
-        4 ta modul
+        {t('course.subtxt2')}
         </p>
       </div>
           </div>
@@ -340,32 +341,32 @@ const AboutCourse = () => {
     <div className='section'>
       <div className='container'>
       <h1 className='about__title'>
-      Keyingi qadam
+     {t('section.title')}
       </h1>
       <p className='section__text'>
-      Birinchi kursdan so'ng siz qaerga va qanday davom etishni tanlashingiz mumkin
+      {t('section.name')}
       </p>
      <div className='section__wrap'>
       <div className='section__box'>
       <i class="fa-solid fa-briefcase"></i>
       <h3 className='section__name'>
-      Bandlikga yordam berish
+      {t('section.cardtitle1')}
       </h3>
       <p className='section__text'>
-      Bizning maqsadimiz sizga ta'lim va kasbiy rivojlanish maqsadlaringizni ro’yobga chiqaradigan va o’qish davomida yaxshi natijalar ko’rsatgan NetPro o’quv markazining muvaffaqiyatli bitiruvchilariga ishga joylashishda faol yordam beramiz.
+      {t('section.text1')}
       </p>
       <ul className='section__list'>
         <li className='section__item'>
-          <h3 className='section__name'>Ish turi</h3>
-          <p className='section__text'>Ofis ishi</p>
+          <h3 className='section__name'>{t('section.subtxt1')}</h3>
+          <p className='section__text'>{t('section.subtxt2')}</p>
         </li>
         <li className='section__item'>
-          <h3 className='section__name'>Ish haqqi</h3>
-          <p className='section__text'>2 000 dan 7000 gacha</p>
+          <h3 className='section__name'>{t('section.subtxt3')}</h3>
+          <p className='section__text'>{t('section.subtxt4')}</p>
         </li>
         <li className='section__item'>
-          <h3 className='section__name'>Ish tajribasi</h3>
-          <p className='section__text'>1 yildan 3yilgacha</p>
+          <h3 className='section__name'>{t('section.subtxt5')}</h3>
+          <p className='section__text'>{t('section.subtxt6')}</p>
         </li>
       </ul>
       </div>
@@ -373,23 +374,23 @@ const AboutCourse = () => {
       <div className='section__box'>
       <i class="fa-solid fa-bag-shopping"></i>
       <h3 className='section__name'>
-      Bandlikga yordam berish
+      {t('section.cardtitle2')}
       </h3>
       <p className='section__text'>
-      Bizning maqsadimiz sizga ta'lim va kasbiy rivojlanish maqsadlaringizni ro’yobga chiqaradigan va o’qish davomida yaxshi natijalar ko’rsatgan NetPro o’quv markazining muvaffaqiyatli bitiruvchilariga ishga joylashishda faol yordam beramiz.
+      {t('section.text2')}
       </p>
       <ul className='section__list'>
         <li className='section__item'>
-          <h3 className='section__name'>Ish turi</h3>
-          <p className='section__text'>Ofis ishi</p>
+          <h3 className='section__name'>{t('section.subtxt1')}</h3>
+          <p className='section__text'>{t('section.subtxt2')}</p>
         </li>
         <li className='section__item'>
-          <h3 className='section__name'>Ish haqqi</h3>
-          <p className='section__text'>2 000 dan 7000 gacha</p>
+          <h3 className='section__name'>{t('section.subtxt3')}</h3>
+          <p className='section__text'>{t('section.subtxt4')}</p>
         </li>
         <li className='section__item'>
-          <h3 className='section__name'>Ish tajribasi</h3>
-          <p className='section__text'>1 yildan 3yilgacha</p>
+          <h3 className='section__name'>{t('section.subtxt5')}</h3>
+          <p className='section__text'>{t('section.subtxt6')}</p>
         </li>
       </ul>
       </div>
@@ -411,34 +412,34 @@ const AboutCourse = () => {
         }}>
           <div className='kovorking__container'>
           <h1 className='about__title'>
-          Kovorking
+          {t('kovorking.title')}
           </h1>
           <p className='kovorking__text'>
-          Kovorking-bu talabalarimiz qo'shimcha ravishda mashq qilishlari va tajribali ma'murlar nazorati ostida uy vazifalarini bajarishlari uchun zarur bo'lgan barcha narsalar bilan jihozlangan ofis.
+          {t('kovorking.text')}
           </p>
           <ul className='kovorking__list'>
             <li className='kovorking__item'>
             <i class="fa-solid fa-book-open"></i>
             <p className='kovorking__text'>
-            Uy vazifasini mashq qilish va bajarish
+            {t('kovorking.kovorking__text1')}
             </p>
             </li>
             <li className='kovorking__item'>
             <i class="fa-solid fa-user"></i>
             <p className='kovorking__text'>
-            Uy vazifasini mashq qilish va bajarish
+            {t('kovorking.kovorking__text2')}
             </p>
             </li>
             <li className='kovorking__item'>
             <i class="fa-regular fa-comment-dots"></i>
             <p className='kovorking__text'>
-            Uy vazifasini mashq qilish va bajarish
+            {t('kovorking.kovorking__text3')}
             </p>
             </li>
           </ul>
           <div className='btn'>
           <a className='mainBtn text-white rounded-md d-flex align-items-center border-0 text-decoration-none' href="#">
-          Kursga yozilish
+          {t('header.btn1')}
           <i class="fa-solid fa-arrow-right"></i>
         </a>
           </div>
@@ -449,47 +450,47 @@ const AboutCourse = () => {
     <div className='wrapper'>
       <div className='container'>
       <h1 className='about__title'>
-      Mavjud vakansiyalar
+      {t('wrapper.title')}
       </h1>
       <ul className='wrapper__list'>
         <li className='wrapper__item'>
          <div className='wrapper__line'>
-         <h3 className='wrapper__name'>3d model</h3>
-         <p className='wrapper__text'>Toshkent shahar</p>
+         <h3 className='wrapper__name'>{t('wrapper.name1')}</h3>
+         <p className='wrapper__text'>{t('wrapper.text3')}</p>
          </div>
           <p className='wrapper__text'>
-          Biz jamoamizga yuqori malakali va tajribali 3D modellashtirish bo'yicha mutaxassisni qidirmoqdamiz. Ideal nomzod 3D modellashtirish texnikasi, dasturiy ta'minot va sanoatning eng yaxshi amaliyotlarini yaxshi bilishi kerak.
+          {t('wrapper.text1')}
           </p>
           <a className='wrapper__link' href="#">
           <i class="fa-regular fa-comment"></i>
-          Javob qoldirish
+          {t('wrapper.text4')}
           </a>
         </li>
         <li className='wrapper__item'>
          <div className='wrapper__line'>
-         <h3 className='wrapper__name'>3d model</h3>
-         <p className='wrapper__text'>Toshkent shahar</p>
+         <h3 className='wrapper__name'>{t('wrapper.name2')}</h3>
+         <p className='wrapper__text'>{t('wrapper.text3')}</p>
          </div>
           <p className='wrapper__text'>
-          Biz jamoamizga yuqori malakali va tajribali 3D modellashtirish bo'yicha mutaxassisni qidirmoqdamiz. Ideal nomzod 3D modellashtirish texnikasi, dasturiy ta'minot va sanoatning eng yaxshi amaliyotlarini yaxshi bilishi kerak.
+          {t('wrapper.text2')}
           </p>
           <a className='wrapper__link' href="#">
           <i class="fa-regular fa-comment"></i>
-          Javob qoldirish
+          {t('wrapper.text4')}
           </a>
         </li>
       </ul>
       <div className='wrapper__sub'>
        <div className='left'>
        <h1 className='about__title'>
-        Kurs haqida video tanishtiruv
+       {t('wrapper.subtitle1')}
         </h1>
        </div>
        <div className='right'>
-        <h3 className='wrapper__name_sub'>Bir marta to’lov qilib butun kursni sotib olish uchun quyidagi tugmani bosing!</h3>
+        <h3 className='wrapper__name_sub'>{t('wrapper.subtitle2')}</h3>
        <div className='btn'>
        <a className='mainBtn text-white rounded-md d-flex align-items-center border-0 text-decoration-none' href="#">
-          Kursga yozilish
+       {t('header.btn1')}
           <i class="fa-solid fa-arrow-right"></i>
         </a>
        </div>
@@ -508,7 +509,7 @@ const AboutCourse = () => {
     <div className='slider'>
       <div className='container'>
       <h1 className='about__title'>
-        O'qituvchilarimiz
+      {t('slider.title')}
       </h1>
       <Swiper
       loop={true}
@@ -540,10 +541,10 @@ const AboutCourse = () => {
           <div className='slider__card'>
             <img className='slider__img' src={teacher1} alt="teacher1" />
             <h3 className='slider__name'>
-            Shaxlo Jo’raeva
+            {t('slider.name1')}
             </h3>
             <p className='slider__text'>
-            Dasturlash o’qituvhcisi
+            {t('slider.text1')}
             </p>
           </div>
         </SwiperSlide>
@@ -551,10 +552,10 @@ const AboutCourse = () => {
         <div className='slider__card'>
             <img className='slider__img' src={teacher2} alt="teacher1" />
             <h3 className='slider__name'>
-            Shaxlo Jo’raeva
+            {t('slider.name2')}
             </h3>
             <p className='slider__text'>
-            Dasturlash o’qituvhcisi
+            {t('slider.text2')}
             </p>
           </div>
         </SwiperSlide>
@@ -562,10 +563,10 @@ const AboutCourse = () => {
         <div className='slider__card'>
             <img className='slider__img' src={teacher3} alt="teacher1" />
             <h3 className='slider__name'>
-            Shaxlo Jo’raeva
+            {t('slider.name3')}
             </h3>
             <p className='slider__text'>
-            Dasturlash o’qituvhcisi
+            {t('slider.text3')}
             </p>
           </div>
         </SwiperSlide>
@@ -573,10 +574,10 @@ const AboutCourse = () => {
         <div className='slider__card'>
             <img className='slider__img' src={teacher2} alt="teacher1" />
             <h3 className='slider__name'>
-            Shaxlo Jo’raeva
+            {t('slider.name2')}
             </h3>
             <p className='slider__text'>
-            Dasturlash o’qituvhcisi
+            {t('slider.text2')}
             </p>
           </div>
         </SwiperSlide>
@@ -590,7 +591,7 @@ const AboutCourse = () => {
     <div className='cards'>
       <div className='container'>
       <h1 className='about__title'>
-      Platformada o'qitish qanday amalga oshiriladi
+      {t('cards.title')}
       </h1>
       <ul className='cards__list'>
         <li className='cards__item'>
@@ -601,11 +602,11 @@ const AboutCourse = () => {
             </h2>
             </div>
             <h3 className='cards__name'>
-            Gurux suxbati
+            {t('cards.name1')}
             </h3>
           </div>
           <p className='cards__text'>
-          Har bir mini-guruh uchun Telegram-da suhbat yaratiladi, unda talabalar barcha o'quv masalalarini muhokama qilishlari mumkin. Siz har doim o'qituvchidan tezkor fikr-mulohazalarni olishingiz yoki guruhingiz bilan suhbatlashishingiz mumkin.
+          {t('cards.text1')}
           </p>
         </li>
         <li className='cards__item'>
@@ -616,11 +617,11 @@ const AboutCourse = () => {
             </h2>
             </div>
             <h3 className='cards__name'>
-            Gurux suxbati
+            {t('cards.name2')}
             </h3>
           </div>
           <p className='cards__text'>
-          Har bir mini-guruh uchun Telegram-da suhbat yaratiladi, unda talabalar barcha o'quv masalalarini muhokama qilishlari mumkin. Siz har doim o'qituvchidan tezkor fikr-mulohazalarni olishingiz yoki guruhingiz bilan suhbatlashishingiz mumkin.
+          {t('cards.text2')}
           </p>
         </li>
         <li className='cards__item'>
@@ -631,11 +632,11 @@ const AboutCourse = () => {
             </h2>
             </div>
             <h3 className='cards__name'>
-            Gurux suxbati
+            {t('cards.name3')}
             </h3>
           </div>
           <p className='cards__text'>
-          Har bir mini-guruh uchun Telegram-da suhbat yaratiladi, unda talabalar barcha o'quv masalalarini muhokama qilishlari mumkin. Siz har doim o'qituvchidan tezkor fikr-mulohazalarni olishingiz yoki guruhingiz bilan suhbatlashishingiz mumkin.
+          {t('cards.text3')}
           </p>
         </li>
         <li className='cards__item'>
@@ -646,11 +647,11 @@ const AboutCourse = () => {
             </h2>
             </div>
             <h3 className='cards__name'>
-            Gurux suxbati
+            {t('cards.name4')}
             </h3>
           </div>
           <p className='cards__text'>
-          Har bir mini-guruh uchun Telegram-da suhbat yaratiladi, unda talabalar barcha o'quv masalalarini muhokama qilishlari mumkin. Siz har doim o'qituvchidan tezkor fikr-mulohazalarni olishingiz yoki guruhingiz bilan suhbatlashishingiz mumkin.
+          {t('cards.text4')}
           </p>
         </li>
         <li className='cards__item'>
@@ -661,11 +662,11 @@ const AboutCourse = () => {
             </h2>
             </div>
             <h3 className='cards__name'>
-            Gurux suxbati
+            {t('cards.name5')}
             </h3>
           </div>
           <p className='cards__text'>
-          Har bir mini-guruh uchun Telegram-da suhbat yaratiladi, unda talabalar barcha o'quv masalalarini muhokama qilishlari mumkin. Siz har doim o'qituvchidan tezkor fikr-mulohazalarni olishingiz yoki guruhingiz bilan suhbatlashishingiz mumkin.
+          {t('cards.text5')}
           </p>
         </li>
         <li className='cards__item'>
@@ -676,11 +677,11 @@ const AboutCourse = () => {
             </h2>
             </div>
             <h3 className='cards__name'>
-            Gurux suxbati
+            {t('cards.name6')}
             </h3>
           </div>
           <p className='cards__text'>
-          Har bir mini-guruh uchun Telegram-da suhbat yaratiladi, unda talabalar barcha o'quv masalalarini muhokama qilishlari mumkin. Siz har doim o'qituvchidan tezkor fikr-mulohazalarni olishingiz yoki guruhingiz bilan suhbatlashishingiz mumkin.
+          {t('cards.text6')}
           </p>
         </li>
       </ul>
@@ -692,7 +693,7 @@ const AboutCourse = () => {
     <div className='question'>
       <div className='container'>
       <h1 className='about__title'>
-      Tez-tez so’raladigan savollar
+      {t('question.title')}
       </h1>
       <ul className='question__list'>
        
@@ -705,7 +706,7 @@ const AboutCourse = () => {
         >
           <Typography >
             <h3 className='question__name'>
-            Dasturchi bo’la olamanmi?
+            {t('question.name1')}
             </h3>
          
           </Typography>
@@ -713,7 +714,7 @@ const AboutCourse = () => {
         <AccordionDetails>  
           <Typography>
             <div className='question__text'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae rem asperiores ex laudantium voluptate nulla ullam obcaecati laboriosam, beatae esse iure magnam nihil perferendis?
+            {t('question.text')}
             </div>
           </Typography>
         </AccordionDetails>
@@ -728,7 +729,7 @@ const AboutCourse = () => {
         >
           <Typography >
             <h3 className='question__name'>
-            Dasturchi bo’la olamanmi?
+            {t('question.name2')}
             </h3>
          
           </Typography>
@@ -736,7 +737,7 @@ const AboutCourse = () => {
         <AccordionDetails>  
           <Typography>
             <div className='question__text'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae rem asperiores ex laudantium voluptate nulla ullam obcaecati laboriosam, beatae esse iure magnam nihil perferendis?
+            {t('question.text')}
             </div>
           </Typography>
         </AccordionDetails>
@@ -751,7 +752,7 @@ const AboutCourse = () => {
         >
           <Typography >
             <h3 className='question__name'>
-            Dasturchi bo’la olamanmi?
+            {t('question.name3')}
             </h3>
         
           </Typography>
@@ -759,7 +760,7 @@ const AboutCourse = () => {
         <AccordionDetails>  
           <Typography>
             <div className='question__text'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae rem asperiores ex laudantium voluptate nulla ullam obcaecati laboriosam, beatae esse iure magnam nihil perferendis?
+            {t('question.text')}
             </div>
           </Typography>
         </AccordionDetails>
@@ -774,7 +775,7 @@ const AboutCourse = () => {
         >
           <Typography >
             <h3 className='question__name'>
-            Dasturchi bo’la olamanmi?
+            {t('question.name4')}
             </h3>
         
           </Typography>
@@ -782,7 +783,7 @@ const AboutCourse = () => {
         <AccordionDetails>  
           <Typography>
             <div className='question__text'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae rem asperiores ex laudantium voluptate nulla ullam obcaecati laboriosam, beatae esse iure magnam nihil perferendis?
+            {t('question.text')}
             </div>
           </Typography>
         </AccordionDetails>
@@ -797,7 +798,7 @@ const AboutCourse = () => {
         >
           <Typography >
             <h3 className='question__name'>
-            Dasturchi bo’la olamanmi?
+            {t('question.name5')}
             </h3>
         
           </Typography>
@@ -805,7 +806,7 @@ const AboutCourse = () => {
         <AccordionDetails>  
           <Typography>
             <div className='question__text'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae rem asperiores ex laudantium voluptate nulla ullam obcaecati laboriosam, beatae esse iure magnam nihil perferendis?
+            {t('question.text')}
             </div>
           </Typography>
         </AccordionDetails>
@@ -820,7 +821,7 @@ const AboutCourse = () => {
         >
           <Typography >
             <h3 className='question__name'>
-            Dasturchi bo’la olamanmi?
+            {t('question.name6')}
             </h3>
 
           </Typography>
@@ -828,7 +829,7 @@ const AboutCourse = () => {
         <AccordionDetails>  
           <Typography>
             <div className='question__text'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae rem asperiores ex laudantium voluptate nulla ullam obcaecati laboriosam, beatae esse iure magnam nihil perferendis?
+            {t('question.text')}
             </div>
           </Typography>
         </AccordionDetails>
@@ -838,7 +839,7 @@ const AboutCourse = () => {
       <div className='question__btn'>
       <div className='btn'>
       <a className='mainBtn text-white rounded-md d-flex align-items-center border-0 text-decoration-none' href="#">
-          Kursga yozilish
+          {t('header.btn1')}
           <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
@@ -858,9 +859,9 @@ const AboutCourse = () => {
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <img className='logo' src={logo} alt="logo" />
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <img className='logo' src={logo} alt="logo" />
       <div class="modal-body" style={{textAlign:"center"}}>
         <form className='modal__form' action="modal__form" >
           <label>ID raqami</label><br />

@@ -22,6 +22,7 @@ const Navbar = () => {
             if (window.scrollY > 0) setScrolled(true)
             else setScrolled(false)
         }
+
         window.addEventListener('scroll', handleScroll)
         return () => {
             window.removeEventListener('scroll', handleScroll)
@@ -48,6 +49,7 @@ const Navbar = () => {
             id: "contacts"
         },
     ]
+    
     return (
         <div>
             <nav className={`${scrolled && 'scrolled'} position-fixed top-0 left-0 w-100  d-flex justify-content-center`}>
@@ -98,6 +100,7 @@ const Navbar = () => {
                     <button onClick={showModal} className='mainBtn text-white rounded-md d-flex align-items-center border-0'>{t('header.btn1')} <ArrowSvg /></button>
                     </div>
                 </div>
+            
             </div>
             {
                 showMainModal && <div className='mainModalWrapper'>

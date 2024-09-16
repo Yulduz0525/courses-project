@@ -138,6 +138,7 @@
     border: 1.5px solid var(--Kulrang-Stroka, #434343);
     border-radius: 4px;
     padding: 25px;
+    height: auto;
   }
   .swiper__card:hover{
     border-width: 1.5px;
@@ -230,7 +231,7 @@
 
   /* kovorking__container style */
   .kovorking__container{
-    width: 50%;
+    width: 70%;
     text-align: center;
     margin: 0 auto;
   }
@@ -253,7 +254,7 @@
     padding-bottom: 50px;
   }
   .kovorking__item{
-    width: 150px;
+    width: 250px;
   }
 
   /* wrapper style */
@@ -443,7 +444,13 @@
     border-radius: 4px;
     text-align: center;
     padding-top: 7px;
+    padding-left: 10PX;
+    padding-right: 10PX;
     margin-left: auto;
+    position: fixed;
+    z-index: 5;
+    bottom: 100px;
+    right: 150PX;
     
   }
   .modal__btn{
@@ -455,6 +462,14 @@
   }
   input{
     outline: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 70%;
+  }
+  .logo{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
   }
   
   
@@ -477,6 +492,9 @@
   .section__wrap{
     width: 100%;
     
+  }
+  .bottom{
+    right: 100px;
   }
 }
 
@@ -541,6 +559,10 @@
    .kovorking__container{
     width: 100%;
   }
+  .bottom{
+    right: 70px;
+    bottom:80px;
+  }
    
     iframe{
       height: 400px;
@@ -603,7 +625,7 @@
     height: 260px;
    }
     .right{
-      top: 420px;
+      top: 470px;
     }
     .cards__item{
       width: 100%;
@@ -621,5 +643,20 @@
     .header{
       background-image: transparent;;
     }
+    .wrapper{
+      padding-top: 200px;
+    }
+    .wrapper__line{
+      flex-direction: column;
+    }
+    .cards__item{
+      height: auto;
+    }
+    .bottom{
+      right: 40px;
+      bottom:70px;
+      background: transparent;;
+    }
+   
     
   }

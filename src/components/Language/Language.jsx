@@ -4,6 +4,7 @@ import NavArrow from "../../assets/navArrow.png"
 // import '../../i18next';
 // import i18next from 'i18next';
 const Language = () => {
+   
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [rotate,setRotate] = useState(false)
     const { i18n } = useTranslation();
